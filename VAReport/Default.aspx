@@ -4136,7 +4136,27 @@
                     </asp:RadioButtonList>
                   </div>
                 </div>
-
+                 <div class="row well" style="border: thin solid #666666;">
+                    <div class="col-sm-6" style="font-weight: bold;">
+                        <span class="text-justify" style="font-family: SutonnyMJ; font-size: medium">10.3 g„Zy¨i ¯’vb</span>(Place of death)
+                    </div>
+                    <div class="col-sm-6">
+                        <asp:RadioButtonList ID="RadioButtonList17" runat="server" Style="font-style: normal;" RepeatDirection="Vertical">
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>1= Home</span> <span class='RadioButtonListNormalFontBangla'>(evox‡Z) </span> "
+                                Value="1"></asp:ListItem>
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>2= Health facility</span> <span class='RadioButtonListNormalFontBangla'>(¯^v¯’¨ †mev cÖwZôv†b) </span> "
+                                Value="2"></asp:ListItem>
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>3= In-transit</span> <span class='RadioButtonListNormalFontBangla'>(cw_g‡a¨ ) </span> "
+                                Value="3"></asp:ListItem>
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>4= Spot of injury/accident</span> <span class='RadioButtonListNormalFontBangla'>(`yN©Ubv ¯’‡j) </span> "
+                                Value="4"></asp:ListItem>
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>777= Others (specify)</span> <span class='RadioButtonListNormalFontBangla'>(Ab¨vb¨ (D‡jøL Kiæb)) </span> "
+                                Value="777"></asp:ListItem>
+                            <asp:ListItem Text="<span class='RadioButtonListNormalFont'>999= Don`t Know</span> <span class='RadioButtonListNormalFontBangla'>(Rvwbbv) </span> "
+                                Value="999"></asp:ListItem>
+                        </asp:RadioButtonList>
+                    </div>
+                </div>
 
 
 

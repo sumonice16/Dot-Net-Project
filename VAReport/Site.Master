@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="VAReport.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+  
+    <link rel="shortcut icon" href="~/VAReport.ico" type="image/x-icon"/>
+   <title>Bootstrap Example</title>
+   <meta content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script> 
+
+ 
+</head>
+<body>
+    <form runat="server">
+    <div class="container">
+  <div class="jumbotron" style="font-family: Arial; background-color: #808080" >
+  <div class="page-header">
+       <h2 align="center" style="color: #003366; font-weight: bold">VERBAL AUTOPSY QUESTIONNAIRE</h2>
+
+      <h4 class="text-center">CCD, <abbr title="International Centre for Diarrhoeal Disease Research, Bangladesh">icddr,b</abbr>, Dhaka</h4>
+    </div>
+       </div>
+      <div class="well"  style="border: medium solid #000000;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    <div class="footer">
+    <p class="text-muted">Copyright © CCD, icddr,b. All Rights Reserved.</p>
+            </div>
+    </div>
+    </form>
+</body>
+</html>

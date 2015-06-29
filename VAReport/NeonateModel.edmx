@@ -1,0 +1,1480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="VANeonateModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="VANeonateModelStoreContainer">
+          <EntitySet Name="ViewForRpt" EntityType="VANeonateModel.Store.ViewForRpt" store:Type="Views" store:Schema="dbo" store:Name="ViewForRpt">
+            <DefiningQuery>SELECT 
+      [ViewForRpt].[dataid] AS [dataid], 
+      [ViewForRpt].[hospitalid] AS [hospitalid], 
+      [ViewForRpt].[clusterid] AS [clusterid], 
+      [ViewForRpt].[decedanttype] AS [decedanttype], 
+      [ViewForRpt].[decedantid] AS [decedantid], 
+      [ViewForRpt].[neonateid] AS [neonateid], 
+      [ViewForRpt].[q1_1id1] AS [q1_1id1], 
+      [ViewForRpt].[q1_1name1] AS [q1_1name1], 
+      [ViewForRpt].[q1_1relp1] AS [q1_1relp1], 
+      [ViewForRpt].[q1_1relp1_other] AS [q1_1relp1_other], 
+      [ViewForRpt].[q1_1pre1] AS [q1_1pre1], 
+      [ViewForRpt].[q1_1id2] AS [q1_1id2], 
+      [ViewForRpt].[q1_1name2] AS [q1_1name2], 
+      [ViewForRpt].[q1_1relp2] AS [q1_1relp2], 
+      [ViewForRpt].[q1_1relp2_other] AS [q1_1relp2_other], 
+      [ViewForRpt].[q1_1pre2] AS [q1_1pre2], 
+      [ViewForRpt].[q1_1id3] AS [q1_1id3], 
+      [ViewForRpt].[q1_1name3] AS [q1_1name3], 
+      [ViewForRpt].[q1_1relp3] AS [q1_1relp3], 
+      [ViewForRpt].[q1_1relp3_other] AS [q1_1relp3_other], 
+      [ViewForRpt].[q1_1pre3] AS [q1_1pre3], 
+      [ViewForRpt].[q1_2] AS [q1_2], 
+      [ViewForRpt].[q1_3] AS [q1_3], 
+      [ViewForRpt].[q1_3other] AS [q1_3other], 
+      [ViewForRpt].[q1_4] AS [q1_4], 
+      [ViewForRpt].[q1_5] AS [q1_5], 
+      [ViewForRpt].[q1_6] AS [q1_6], 
+      [ViewForRpt].[q2_1] AS [q2_1], 
+      [ViewForRpt].[q2_2] AS [q2_2], 
+      [ViewForRpt].[q2_3] AS [q2_3], 
+      [ViewForRpt].[q3_1] AS [q3_1], 
+      [ViewForRpt].[q3_1_1] AS [q3_1_1], 
+      [ViewForRpt].[q3_1_2] AS [q3_1_2], 
+      [ViewForRpt].[q3_2] AS [q3_2], 
+      [ViewForRpt].[q3_3] AS [q3_3], 
+      [ViewForRpt].[q3_3code] AS [q3_3code], 
+      [ViewForRpt].[q3_4] AS [q3_4], 
+      [ViewForRpt].[q3_5] AS [q3_5], 
+      [ViewForRpt].[Calcq3_6days] AS [Calcq3_6days], 
+      [ViewForRpt].[q3_6days] AS [q3_6days], 
+      [ViewForRpt].[q3_6hours] AS [q3_6hours], 
+      [ViewForRpt].[q3_6mins] AS [q3_6mins], 
+      [ViewForRpt].[q3_7] AS [q3_7], 
+      [ViewForRpt].[q4_1_1] AS [q4_1_1], 
+      [ViewForRpt].[q4_1_2] AS [q4_1_2], 
+      [ViewForRpt].[q5_1] AS [q5_1], 
+      [ViewForRpt].[q5_1_1] AS [q5_1_1], 
+      [ViewForRpt].[q5_1_1Other] AS [q5_1_1Other], 
+      [ViewForRpt].[q5_2] AS [q5_2], 
+      [ViewForRpt].[q5_3] AS [q5_3], 
+      [ViewForRpt].[q5_4days] AS [q5_4days], 
+      [ViewForRpt].[q5_4hours] AS [q5_4hours], 
+      [ViewForRpt].[q5_4mins] AS [q5_4mins], 
+      [ViewForRpt].[q5_5] AS [q5_5], 
+      [ViewForRpt].[q6_1_1] AS [q6_1_1], 
+      [ViewForRpt].[q6_1_2] AS [q6_1_2], 
+      [ViewForRpt].[q6_1_3] AS [q6_1_3], 
+      [ViewForRpt].[q6_1_4] AS [q6_1_4], 
+      [ViewForRpt].[q6_1_5] AS [q6_1_5], 
+      [ViewForRpt].[q6_1_6] AS [q6_1_6], 
+      [ViewForRpt].[q6_1_7] AS [q6_1_7], 
+      [ViewForRpt].[q6_1_8] AS [q6_1_8], 
+      [ViewForRpt].[q6_1_9] AS [q6_1_9], 
+      [ViewForRpt].[q6_1Other] AS [q6_1Other], 
+      [ViewForRpt].[q6_2_1_1] AS [q6_2_1_1], 
+      [ViewForRpt].[q6_2_1_1T] AS [q6_2_1_1T], 
+      [ViewForRpt].[q6_2_1_2] AS [q6_2_1_2], 
+      [ViewForRpt].[q6_2_1_2T] AS [q6_2_1_2T], 
+      [ViewForRpt].[q6_2_1_3] AS [q6_2_1_3], 
+      [ViewForRpt].[q6_2_1_3T] AS [q6_2_1_3T], 
+      [ViewForRpt].[q6_2_1_4] AS [q6_2_1_4], 
+      [ViewForRpt].[q6_2_1_4T] AS [q6_2_1_4T], 
+      [ViewForRpt].[q6_2_2] AS [q6_2_2], 
+      [ViewForRpt].[q6_2_3] AS [q6_2_3], 
+      [ViewForRpt].[q6_2_4days] AS [q6_2_4days], 
+      [ViewForRpt].[q6_2_4months] AS [q6_2_4months], 
+      [ViewForRpt].[q6_2_4years] AS [q6_2_4years], 
+      [ViewForRpt].[q6_2_5] AS [q6_2_5], 
+      [ViewForRpt].[q6_3_1] AS [q6_3_1], 
+      [ViewForRpt].[q6_3_2] AS [q6_3_2], 
+      [ViewForRpt].[q6_3_3] AS [q6_3_3], 
+      [ViewForRpt].[q6_3_4] AS [q6_3_4], 
+      [ViewForRpt].[q6_3_5] AS [q6_3_5], 
+      [ViewForRpt].[q6_3_6] AS [q6_3_6], 
+      [ViewForRpt].[q6_3_7] AS [q6_3_7], 
+      [ViewForRpt].[q6_3_8] AS [q6_3_8], 
+      [ViewForRpt].[q6_3_9] AS [q6_3_9], 
+      [ViewForRpt].[q6_3_10] AS [q6_3_10], 
+      [ViewForRpt].[q6_3_11] AS [q6_3_11], 
+      [ViewForRpt].[q6_3_12] AS [q6_3_12], 
+      [ViewForRpt].[q6_3_13] AS [q6_3_13], 
+      [ViewForRpt].[q6_3_14] AS [q6_3_14], 
+      [ViewForRpt].[q6_3_15] AS [q6_3_15], 
+      [ViewForRpt].[q6_3_16] AS [q6_3_16], 
+      [ViewForRpt].[q6_3_17] AS [q6_3_17], 
+      [ViewForRpt].[q6_3_18] AS [q6_3_18], 
+      [ViewForRpt].[q6_3_19] AS [q6_3_19], 
+      [ViewForRpt].[q6_3_19a] AS [q6_3_19a], 
+      [ViewForRpt].[q6_3_20] AS [q6_3_20], 
+      [ViewForRpt].[q6_3_21] AS [q6_3_21], 
+      [ViewForRpt].[q6_3_22] AS [q6_3_22], 
+      [ViewForRpt].[q6_3_23] AS [q6_3_23], 
+      [ViewForRpt].[q6_3_24] AS [q6_3_24], 
+      [ViewForRpt].[q6_3_25] AS [q6_3_25], 
+      [ViewForRpt].[q6_3_26] AS [q6_3_26], 
+      [ViewForRpt].[q6_3_27] AS [q6_3_27], 
+      [ViewForRpt].[q6_3Other] AS [q6_3Other], 
+      [ViewForRpt].[q6_3a_1months] AS [q6_3a_1months], 
+      [ViewForRpt].[q6_3a_1days] AS [q6_3a_1days], 
+      [ViewForRpt].[q6_3a_2amonth] AS [q6_3a_2amonth], 
+      [ViewForRpt].[q6_3a_2adays] AS [q6_3a_2adays], 
+      [ViewForRpt].[q6_3a_2bmonth] AS [q6_3a_2bmonth], 
+      [ViewForRpt].[q6_3a_2bdays] AS [q6_3a_2bdays], 
+      [ViewForRpt].[q6_3a_3] AS [q6_3a_3], 
+      [ViewForRpt].[q6_3a_4] AS [q6_3a_4], 
+      [ViewForRpt].[q6_3a_5] AS [q6_3a_5], 
+      [ViewForRpt].[q6_3a_6] AS [q6_3a_6], 
+      [ViewForRpt].[q6_3a_7] AS [q6_3a_7], 
+      [ViewForRpt].[q6_3a_8] AS [q6_3a_8], 
+      [ViewForRpt].[q6_4] AS [q6_4], 
+      [ViewForRpt].[q6_5] AS [q6_5], 
+      [ViewForRpt].[q6_5Other] AS [q6_5Other], 
+      [ViewForRpt].[q6_5_1] AS [q6_5_1], 
+      [ViewForRpt].[q6_5_2_1] AS [q6_5_2_1], 
+      [ViewForRpt].[q6_5_2_2] AS [q6_5_2_2], 
+      [ViewForRpt].[q6_5_2_3] AS [q6_5_2_3], 
+      [ViewForRpt].[q6_5_2_4] AS [q6_5_2_4], 
+      [ViewForRpt].[q6_5_2_5] AS [q6_5_2_5], 
+      [ViewForRpt].[q6_5_2_6] AS [q6_5_2_6], 
+      [ViewForRpt].[q6_5_2_7] AS [q6_5_2_7], 
+      [ViewForRpt].[q6_5_2_8] AS [q6_5_2_8], 
+      [ViewForRpt].[q6_5_2_9] AS [q6_5_2_9], 
+      [ViewForRpt].[q6_5_2_10] AS [q6_5_2_10], 
+      [ViewForRpt].[q6_5_2_11] AS [q6_5_2_11], 
+      [ViewForRpt].[q6_5_2Other] AS [q6_5_2Other], 
+      [ViewForRpt].[q6_5_3_1] AS [q6_5_3_1], 
+      [ViewForRpt].[q6_5_3_2] AS [q6_5_3_2], 
+      [ViewForRpt].[q6_5_3_3] AS [q6_5_3_3], 
+      [ViewForRpt].[q6_5_3_4] AS [q6_5_3_4], 
+      [ViewForRpt].[q6_5_3_5] AS [q6_5_3_5], 
+      [ViewForRpt].[q6_5_3_6] AS [q6_5_3_6], 
+      [ViewForRpt].[q6_5_3_7] AS [q6_5_3_7], 
+      [ViewForRpt].[q6_5_3_8] AS [q6_5_3_8], 
+      [ViewForRpt].[q6_5_3_9] AS [q6_5_3_9], 
+      [ViewForRpt].[q6_5_3_10] AS [q6_5_3_10], 
+      [ViewForRpt].[q6_5_3_11] AS [q6_5_3_11], 
+      [ViewForRpt].[q6_5_3_12] AS [q6_5_3_12], 
+      [ViewForRpt].[q6_5_3Other] AS [q6_5_3Other], 
+      [ViewForRpt].[q6_5_4] AS [q6_5_4], 
+      [ViewForRpt].[q6_5_5] AS [q6_5_5], 
+      [ViewForRpt].[q6_5_6] AS [q6_5_6], 
+      [ViewForRpt].[q6_5_7] AS [q6_5_7], 
+      [ViewForRpt].[q6_5_8] AS [q6_5_8], 
+      [ViewForRpt].[q6_6_1] AS [q6_6_1], 
+      [ViewForRpt].[q6_6_2] AS [q6_6_2], 
+      [ViewForRpt].[q6_6_2Other] AS [q6_6_2Other], 
+      [ViewForRpt].[q6_6_3] AS [q6_6_3], 
+      [ViewForRpt].[q6_6_4] AS [q6_6_4], 
+      [ViewForRpt].[q6_6_5] AS [q6_6_5], 
+      [ViewForRpt].[q6_6_6] AS [q6_6_6], 
+      [ViewForRpt].[q6_6_6a] AS [q6_6_6a], 
+      [ViewForRpt].[q6_6_6b] AS [q6_6_6b], 
+      [ViewForRpt].[q6_6_6d] AS [q6_6_6d], 
+      [ViewForRpt].[q6_6_7] AS [q6_6_7], 
+      [ViewForRpt].[q7_1] AS [q7_1], 
+      [ViewForRpt].[q7_2] AS [q7_2], 
+      [ViewForRpt].[q7_3] AS [q7_3], 
+      [ViewForRpt].[q7_4] AS [q7_4], 
+      [ViewForRpt].[q7_5] AS [q7_5], 
+      [ViewForRpt].[q7_6] AS [q7_6], 
+      [ViewForRpt].[q7_7] AS [q7_7], 
+      [ViewForRpt].[q7_8] AS [q7_8], 
+      [ViewForRpt].[q7_9] AS [q7_9], 
+      [ViewForRpt].[q7_10] AS [q7_10], 
+      [ViewForRpt].[q7_11] AS [q7_11], 
+      [ViewForRpt].[q7_12] AS [q7_12], 
+      [ViewForRpt].[q7_13] AS [q7_13], 
+      [ViewForRpt].[q7_14] AS [q7_14], 
+      [ViewForRpt].[q7_14Other] AS [q7_14Other], 
+      [ViewForRpt].[q8_1] AS [q8_1], 
+      [ViewForRpt].[q8_2] AS [q8_2], 
+      [ViewForRpt].[q8_3] AS [q8_3], 
+      [ViewForRpt].[q8_4] AS [q8_4], 
+      [ViewForRpt].[q8_5] AS [q8_5], 
+      [ViewForRpt].[q8_5_1days] AS [q8_5_1days], 
+      [ViewForRpt].[q8_5_1hours] AS [q8_5_1hours], 
+      [ViewForRpt].[q8_5_2] AS [q8_5_2], 
+      [ViewForRpt].[q8_6] AS [q8_6], 
+      [ViewForRpt].[q8_7] AS [q8_7], 
+      [ViewForRpt].[q8_8] AS [q8_8], 
+      [ViewForRpt].[q8_9] AS [q8_9], 
+      [ViewForRpt].[q8_10] AS [q8_10], 
+      [ViewForRpt].[q8_10_1] AS [q8_10_1], 
+      [ViewForRpt].[q8_11] AS [q8_11], 
+      [ViewForRpt].[q8_12] AS [q8_12], 
+      [ViewForRpt].[q8_13] AS [q8_13], 
+      [ViewForRpt].[q8_14] AS [q8_14], 
+      [ViewForRpt].[q8_15] AS [q8_15], 
+      [ViewForRpt].[q8_16] AS [q8_16], 
+      [ViewForRpt].[q8_17] AS [q8_17], 
+      [ViewForRpt].[q8_18] AS [q8_18], 
+      [ViewForRpt].[q8_19] AS [q8_19], 
+      [ViewForRpt].[q8_20] AS [q8_20], 
+      [ViewForRpt].[q8_21] AS [q8_21], 
+      [ViewForRpt].[q8_22] AS [q8_22], 
+      [ViewForRpt].[q8_23] AS [q8_23], 
+      [ViewForRpt].[q8_24] AS [q8_24], 
+      [ViewForRpt].[q8_25days] AS [q8_25days], 
+      [ViewForRpt].[q8_25hours] AS [q8_25hours], 
+      [ViewForRpt].[q8_26] AS [q8_26], 
+      [ViewForRpt].[q8_27hours] AS [q8_27hours], 
+      [ViewForRpt].[q8_27days] AS [q8_27days], 
+      [ViewForRpt].[q8_28] AS [q8_28], 
+      [ViewForRpt].[q8_29] AS [q8_29], 
+      [ViewForRpt].[q8_30days] AS [q8_30days], 
+      [ViewForRpt].[q8_30hours] AS [q8_30hours], 
+      [ViewForRpt].[q8_31] AS [q8_31], 
+      [ViewForRpt].[q8_31_1_1] AS [q8_31_1_1], 
+      [ViewForRpt].[q8_31_1_2] AS [q8_31_1_2], 
+      [ViewForRpt].[q8_31_1_3] AS [q8_31_1_3], 
+      [ViewForRpt].[q8_31_1_4] AS [q8_31_1_4], 
+      [ViewForRpt].[q8_31_1_5] AS [q8_31_1_5], 
+      [ViewForRpt].[q8_31_1_6] AS [q8_31_1_6], 
+      [ViewForRpt].[q8_31_1_7] AS [q8_31_1_7], 
+      [ViewForRpt].[q8_31_1_8] AS [q8_31_1_8], 
+      [ViewForRpt].[q8_31_1Other] AS [q8_31_1Other], 
+      [ViewForRpt].[q8_31_2hours] AS [q8_31_2hours], 
+      [ViewForRpt].[q8_31_2days] AS [q8_31_2days], 
+      [ViewForRpt].[q8_31_3] AS [q8_31_3], 
+      [ViewForRpt].[q8_31_4days] AS [q8_31_4days], 
+      [ViewForRpt].[q8_31_4weeks] AS [q8_31_4weeks], 
+      [ViewForRpt].[q8_32_1] AS [q8_32_1], 
+      [ViewForRpt].[q8_32_2] AS [q8_32_2], 
+      [ViewForRpt].[q8_32_3] AS [q8_32_3], 
+      [ViewForRpt].[q8_32_4] AS [q8_32_4], 
+      [ViewForRpt].[q8_32_5] AS [q8_32_5], 
+      [ViewForRpt].[q8_32Other] AS [q8_32Other], 
+      [ViewForRpt].[q8_33] AS [q8_33], 
+      [ViewForRpt].[q8_33a] AS [q8_33a], 
+      [ViewForRpt].[q8_34hours] AS [q8_34hours], 
+      [ViewForRpt].[q8_34days] AS [q8_34days], 
+      [ViewForRpt].[q8_35] AS [q8_35], 
+      [ViewForRpt].[q8_36] AS [q8_36], 
+      [ViewForRpt].[q8_37] AS [q8_37], 
+      [ViewForRpt].[q8_37a] AS [q8_37a], 
+      [ViewForRpt].[q8_37b] AS [q8_37b], 
+      [ViewForRpt].[q8_38] AS [q8_38], 
+      [ViewForRpt].[q8_39] AS [q8_39], 
+      [ViewForRpt].[q8_40] AS [q8_40], 
+      [ViewForRpt].[q8_41] AS [q8_41], 
+      [ViewForRpt].[q8_42] AS [q8_42], 
+      [ViewForRpt].[q8_43] AS [q8_43], 
+      [ViewForRpt].[q8_44_1] AS [q8_44_1], 
+      [ViewForRpt].[q8_44_2] AS [q8_44_2], 
+      [ViewForRpt].[q8_44_3] AS [q8_44_3], 
+      [ViewForRpt].[q8_44_4] AS [q8_44_4], 
+      [ViewForRpt].[q8_44_5] AS [q8_44_5], 
+      [ViewForRpt].[q8_44Other] AS [q8_44Other], 
+      [ViewForRpt].[q8_45] AS [q8_45], 
+      [ViewForRpt].[q8_46] AS [q8_46], 
+      [ViewForRpt].[q8_46a] AS [q8_46a], 
+      [ViewForRpt].[q8_47] AS [q8_47], 
+      [ViewForRpt].[q8_48] AS [q8_48], 
+      [ViewForRpt].[q8_49] AS [q8_49], 
+      [ViewForRpt].[q8_50] AS [q8_50], 
+      [ViewForRpt].[q8_51] AS [q8_51], 
+      [ViewForRpt].[q8_52] AS [q8_52], 
+      [ViewForRpt].[q8_53] AS [q8_53], 
+      [ViewForRpt].[q8_54hours] AS [q8_54hours], 
+      [ViewForRpt].[q8_54days] AS [q8_54days], 
+      [ViewForRpt].[q8_55] AS [q8_55], 
+      [ViewForRpt].[q8_56] AS [q8_56], 
+      [ViewForRpt].[q8_57] AS [q8_57], 
+      [ViewForRpt].[q8_58] AS [q8_58], 
+      [ViewForRpt].[q8_58a] AS [q8_58a], 
+      [ViewForRpt].[q8_58aOther] AS [q8_58aOther], 
+      [ViewForRpt].[q8_59] AS [q8_59], 
+      [ViewForRpt].[q8_60] AS [q8_60], 
+      [ViewForRpt].[q8_61] AS [q8_61], 
+      [ViewForRpt].[q8_62] AS [q8_62], 
+      [ViewForRpt].[q9_1] AS [q9_1], 
+      [ViewForRpt].[q9_2] AS [q9_2], 
+      [ViewForRpt].[q9_3] AS [q9_3], 
+      [ViewForRpt].[q9_3_1] AS [q9_3_1], 
+      [ViewForRpt].[q9_3_2] AS [q9_3_2], 
+      [ViewForRpt].[q9_3_3] AS [q9_3_3], 
+      [ViewForRpt].[q9_3_4] AS [q9_3_4], 
+      [ViewForRpt].[q9_3_5] AS [q9_3_5], 
+      [ViewForRpt].[q9_3_6] AS [q9_3_6], 
+      [ViewForRpt].[q9_3_7] AS [q9_3_7], 
+      [ViewForRpt].[q9_3_8] AS [q9_3_8], 
+      [ViewForRpt].[q9_3_9] AS [q9_3_9], 
+      [ViewForRpt].[q9_3_10] AS [q9_3_10], 
+      [ViewForRpt].[q9_3_10Other] AS [q9_3_10Other], 
+      [ViewForRpt].[q10_1] AS [q10_1], 
+      [ViewForRpt].[q10_1_1] AS [q10_1_1], 
+      [ViewForRpt].[q10_1_1Other] AS [q10_1_1Other], 
+      [ViewForRpt].[q10_1_2] AS [q10_1_2], 
+      [ViewForRpt].[q10_1_2Other] AS [q10_1_2Other], 
+      [ViewForRpt].[q10_1_3] AS [q10_1_3], 
+      [ViewForRpt].[q10_1_3Other] AS [q10_1_3Other], 
+      [ViewForRpt].[q10_1_4] AS [q10_1_4], 
+      [ViewForRpt].[q10_1_4Other] AS [q10_1_4Other], 
+      [ViewForRpt].[q10_1_2_1] AS [q10_1_2_1], 
+      [ViewForRpt].[q10_1_2_2] AS [q10_1_2_2], 
+      [ViewForRpt].[q10_1_2_3] AS [q10_1_2_3], 
+      [ViewForRpt].[q10_1_2_4] AS [q10_1_2_4], 
+      [ViewForRpt].[q10_1_2_5] AS [q10_1_2_5], 
+      [ViewForRpt].[q10_1_2_6] AS [q10_1_2_6], 
+      [ViewForRpt].[q10_1_2_7] AS [q10_1_2_7], 
+      [ViewForRpt].[q10_1_2_8] AS [q10_1_2_8], 
+      [ViewForRpt].[q10_1_2_8Other] AS [q10_1_2_8Other], 
+      [ViewForRpt].[q10_1_2_9] AS [q10_1_2_9], 
+      [ViewForRpt].[q10_2] AS [q10_2], 
+      [ViewForRpt].[q10_2_1] AS [q10_2_1], 
+      [ViewForRpt].[q10_2_2] AS [q10_2_2], 
+      [ViewForRpt].[q10_2_3] AS [q10_2_3], 
+      [ViewForRpt].[q10_2_4] AS [q10_2_4], 
+      [ViewForRpt].[q10_2_5] AS [q10_2_5], 
+      [ViewForRpt].[q10_2_6] AS [q10_2_6], 
+      [ViewForRpt].[q10_2_7] AS [q10_2_7], 
+      [ViewForRpt].[q10_2_8] AS [q10_2_8], 
+      [ViewForRpt].[q10_2_9] AS [q10_2_9], 
+      [ViewForRpt].[q10_2_10] AS [q10_2_10], 
+      [ViewForRpt].[q10_2_11] AS [q10_2_11], 
+      [ViewForRpt].[q10_2_12] AS [q10_2_12], 
+      [ViewForRpt].[q10_2_2a] AS [q10_2_2a], 
+      [ViewForRpt].[q10_3] AS [q10_3], 
+      [ViewForRpt].[q10_3Other] AS [q10_3Other], 
+      [ViewForRpt].[q10_3_1] AS [q10_3_1], 
+      [ViewForRpt].[q10_3_2] AS [q10_3_2], 
+      [ViewForRpt].[q10_3_3] AS [q10_3_3], 
+      [ViewForRpt].[q10_3_4] AS [q10_3_4], 
+      [ViewForRpt].[q10_3_5_1] AS [q10_3_5_1], 
+      [ViewForRpt].[q10_3_5_2] AS [q10_3_5_2], 
+      [ViewForRpt].[q11_1] AS [q11_1], 
+      [ViewForRpt].[q11_2] AS [q11_2], 
+      [ViewForRpt].[q11_3] AS [q11_3], 
+      [ViewForRpt].[q11_4] AS [q11_4], 
+      [ViewForRpt].[q11_5a_1] AS [q11_5a_1], 
+      [ViewForRpt].[q11_5a_2] AS [q11_5a_2], 
+      [ViewForRpt].[q11_5b_1] AS [q11_5b_1], 
+      [ViewForRpt].[q11_5b_2] AS [q11_5b_2], 
+      [ViewForRpt].[q12] AS [q12], 
+      [ViewForRpt].[assetid] AS [assetid], 
+      [ViewForRpt].[EntryBy] AS [EntryBy], 
+      [ViewForRpt].[EntryDate] AS [EntryDate], 
+      [ViewForRpt].[EditBy] AS [EditBy], 
+      [ViewForRpt].[EditDate] AS [EditDate]
+      FROM [dbo].[ViewForRpt] AS [ViewForRpt]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'VANeonate.dbo.ViewForRpt' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="ViewForRpt">
+          <Key>
+            <PropertyRef Name="dataid" />
+            <PropertyRef Name="hospitalid" />
+            <PropertyRef Name="clusterid" />
+            <PropertyRef Name="decedanttype" />
+            <PropertyRef Name="decedantid" />
+            <PropertyRef Name="assetid" />
+            <PropertyRef Name="EntryDate" />
+          </Key>
+          <Property Name="dataid" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="hospitalid" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="clusterid" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="decedanttype" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="decedantid" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="neonateid" Type="nvarchar" MaxLength="10" />
+          <Property Name="q1_1id1" Type="smallint" />
+          <Property Name="q1_1name1" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1relp1" Type="smallint" />
+          <Property Name="q1_1relp1_other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1pre1" Type="tinyint" />
+          <Property Name="q1_1id2" Type="smallint" />
+          <Property Name="q1_1name2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1relp2" Type="smallint" />
+          <Property Name="q1_1relp2_other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1pre2" Type="tinyint" />
+          <Property Name="q1_1id3" Type="smallint" />
+          <Property Name="q1_1name3" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1relp3" Type="smallint" />
+          <Property Name="q1_1relp3_other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_1pre3" Type="tinyint" />
+          <Property Name="q1_2" Type="nvarchar" MaxLength="10" />
+          <Property Name="q1_3" Type="smallint" />
+          <Property Name="q1_3other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q1_4" Type="int" />
+          <Property Name="q1_5" Type="int" />
+          <Property Name="q1_6" Type="smallint" />
+          <Property Name="q2_1" Type="nvarchar" MaxLength="10" />
+          <Property Name="q2_2" Type="datetime" />
+          <Property Name="q2_3" Type="datetime" />
+          <Property Name="q3_1" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_1_1" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_1_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_3" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_3code" Type="nvarchar" MaxLength="100" />
+          <Property Name="q3_4" Type="datetime" />
+          <Property Name="q3_5" Type="datetime" />
+          <Property Name="Calcq3_6days" Type="int" />
+          <Property Name="q3_6days" Type="int" />
+          <Property Name="q3_6hours" Type="int" />
+          <Property Name="q3_6mins" Type="int" />
+          <Property Name="q3_7" Type="smallint" />
+          <Property Name="q4_1_1" Type="nvarchar" MaxLength="200" />
+          <Property Name="q4_1_2" Type="nvarchar" MaxLength="200" />
+          <Property Name="q5_1" Type="smallint" />
+          <Property Name="q5_1_1" Type="smallint" />
+          <Property Name="q5_1_1Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q5_2" Type="smallint" />
+          <Property Name="q5_3" Type="smallint" />
+          <Property Name="q5_4days" Type="int" />
+          <Property Name="q5_4hours" Type="int" />
+          <Property Name="q5_4mins" Type="int" />
+          <Property Name="q5_5" Type="smallint" />
+          <Property Name="q6_1_1" Type="int" />
+          <Property Name="q6_1_2" Type="int" />
+          <Property Name="q6_1_3" Type="int" />
+          <Property Name="q6_1_4" Type="int" />
+          <Property Name="q6_1_5" Type="int" />
+          <Property Name="q6_1_6" Type="int" />
+          <Property Name="q6_1_7" Type="int" />
+          <Property Name="q6_1_8" Type="int" />
+          <Property Name="q6_1_9" Type="int" />
+          <Property Name="q6_1Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_2_1_1" Type="smallint" />
+          <Property Name="q6_2_1_1T" Type="smallint" />
+          <Property Name="q6_2_1_2" Type="smallint" />
+          <Property Name="q6_2_1_2T" Type="smallint" />
+          <Property Name="q6_2_1_3" Type="smallint" />
+          <Property Name="q6_2_1_3T" Type="smallint" />
+          <Property Name="q6_2_1_4" Type="smallint" />
+          <Property Name="q6_2_1_4T" Type="smallint" />
+          <Property Name="q6_2_2" Type="int" />
+          <Property Name="q6_2_3" Type="int" />
+          <Property Name="q6_2_4days" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_2_4months" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_2_4years" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_2_5" Type="int" />
+          <Property Name="q6_3_1" Type="smallint" />
+          <Property Name="q6_3_2" Type="smallint" />
+          <Property Name="q6_3_3" Type="smallint" />
+          <Property Name="q6_3_4" Type="smallint" />
+          <Property Name="q6_3_5" Type="smallint" />
+          <Property Name="q6_3_6" Type="smallint" />
+          <Property Name="q6_3_7" Type="smallint" />
+          <Property Name="q6_3_8" Type="smallint" />
+          <Property Name="q6_3_9" Type="smallint" />
+          <Property Name="q6_3_10" Type="smallint" />
+          <Property Name="q6_3_11" Type="smallint" />
+          <Property Name="q6_3_12" Type="smallint" />
+          <Property Name="q6_3_13" Type="smallint" />
+          <Property Name="q6_3_14" Type="smallint" />
+          <Property Name="q6_3_15" Type="smallint" />
+          <Property Name="q6_3_16" Type="smallint" />
+          <Property Name="q6_3_17" Type="smallint" />
+          <Property Name="q6_3_18" Type="smallint" />
+          <Property Name="q6_3_19" Type="smallint" />
+          <Property Name="q6_3_19a" Type="smallint" />
+          <Property Name="q6_3_20" Type="smallint" />
+          <Property Name="q6_3_21" Type="smallint" />
+          <Property Name="q6_3_22" Type="smallint" />
+          <Property Name="q6_3_23" Type="smallint" />
+          <Property Name="q6_3_24" Type="smallint" />
+          <Property Name="q6_3_25" Type="smallint" />
+          <Property Name="q6_3_26" Type="smallint" />
+          <Property Name="q6_3_27" Type="smallint" />
+          <Property Name="q6_3Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_3a_1months" Type="int" />
+          <Property Name="q6_3a_1days" Type="int" />
+          <Property Name="q6_3a_2amonth" Type="int" />
+          <Property Name="q6_3a_2adays" Type="int" />
+          <Property Name="q6_3a_2bmonth" Type="int" />
+          <Property Name="q6_3a_2bdays" Type="int" />
+          <Property Name="q6_3a_3" Type="smallint" />
+          <Property Name="q6_3a_4" Type="int" />
+          <Property Name="q6_3a_5" Type="smallint" />
+          <Property Name="q6_3a_6" Type="int" />
+          <Property Name="q6_3a_7" Type="smallint" />
+          <Property Name="q6_3a_8" Type="int" />
+          <Property Name="q6_4" Type="smallint" />
+          <Property Name="q6_5" Type="smallint" />
+          <Property Name="q6_5Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_5_1" Type="nvarchar" MaxLength="150" />
+          <Property Name="q6_5_2_1" Type="int" />
+          <Property Name="q6_5_2_2" Type="int" />
+          <Property Name="q6_5_2_3" Type="int" />
+          <Property Name="q6_5_2_4" Type="int" />
+          <Property Name="q6_5_2_5" Type="int" />
+          <Property Name="q6_5_2_6" Type="int" />
+          <Property Name="q6_5_2_7" Type="int" />
+          <Property Name="q6_5_2_8" Type="int" />
+          <Property Name="q6_5_2_9" Type="int" />
+          <Property Name="q6_5_2_10" Type="int" />
+          <Property Name="q6_5_2_11" Type="int" />
+          <Property Name="q6_5_2Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_5_3_1" Type="int" />
+          <Property Name="q6_5_3_2" Type="int" />
+          <Property Name="q6_5_3_3" Type="int" />
+          <Property Name="q6_5_3_4" Type="int" />
+          <Property Name="q6_5_3_5" Type="int" />
+          <Property Name="q6_5_3_6" Type="int" />
+          <Property Name="q6_5_3_7" Type="int" />
+          <Property Name="q6_5_3_8" Type="int" />
+          <Property Name="q6_5_3_9" Type="int" />
+          <Property Name="q6_5_3_10" Type="int" />
+          <Property Name="q6_5_3_11" Type="int" />
+          <Property Name="q6_5_3_12" Type="int" />
+          <Property Name="q6_5_3Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_5_4" Type="int" />
+          <Property Name="q6_5_5" Type="smallint" />
+          <Property Name="q6_5_6" Type="smallint" />
+          <Property Name="q6_5_7" Type="int" />
+          <Property Name="q6_5_8" Type="smallint" />
+          <Property Name="q6_6_1" Type="int" />
+          <Property Name="q6_6_2" Type="int" />
+          <Property Name="q6_6_2Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q6_6_3" Type="smallint" />
+          <Property Name="q6_6_4" Type="smallint" />
+          <Property Name="q6_6_5" Type="smallint" />
+          <Property Name="q6_6_6" Type="smallint" />
+          <Property Name="q6_6_6a" Type="smallint" />
+          <Property Name="q6_6_6b" Type="smallint" />
+          <Property Name="q6_6_6d" Type="smallint" />
+          <Property Name="q6_6_7" Type="smallint" />
+          <Property Name="q7_1" Type="smallint" />
+          <Property Name="q7_2" Type="smallint" />
+          <Property Name="q7_3" Type="nvarchar" MaxLength="200" />
+          <Property Name="q7_4" Type="float" />
+          <Property Name="q7_5" Type="smallint" />
+          <Property Name="q7_6" Type="smallint" />
+          <Property Name="q7_7" Type="smallint" />
+          <Property Name="q7_8" Type="int" />
+          <Property Name="q7_9" Type="smallint" />
+          <Property Name="q7_10" Type="smallint" />
+          <Property Name="q7_11" Type="smallint" />
+          <Property Name="q7_12" Type="smallint" />
+          <Property Name="q7_13" Type="nvarchar" MaxLength="200" />
+          <Property Name="q7_14" Type="smallint" />
+          <Property Name="q7_14Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_1" Type="nvarchar" MaxLength="10" />
+          <Property Name="q8_2" Type="smallint" />
+          <Property Name="q8_3" Type="smallint" />
+          <Property Name="q8_4" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_5" Type="smallint" />
+          <Property Name="q8_5_1days" Type="int" />
+          <Property Name="q8_5_1hours" Type="int" />
+          <Property Name="q8_5_2" Type="smallint" />
+          <Property Name="q8_6" Type="smallint" />
+          <Property Name="q8_7" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_8" Type="smallint" />
+          <Property Name="q8_9" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_10" Type="smallint" />
+          <Property Name="q8_10_1" Type="smallint" />
+          <Property Name="q8_11" Type="smallint" />
+          <Property Name="q8_12" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_13" Type="smallint" />
+          <Property Name="q8_14" Type="int" />
+          <Property Name="q8_15" Type="smallint" />
+          <Property Name="q8_16" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_17" Type="smallint" />
+          <Property Name="q8_18" Type="smallint" />
+          <Property Name="q8_19" Type="smallint" />
+          <Property Name="q8_20" Type="smallint" />
+          <Property Name="q8_21" Type="smallint" />
+          <Property Name="q8_22" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_23" Type="smallint" />
+          <Property Name="q8_24" Type="smallint" />
+          <Property Name="q8_25days" Type="int" />
+          <Property Name="q8_25hours" Type="int" />
+          <Property Name="q8_26" Type="smallint" />
+          <Property Name="q8_27hours" Type="int" />
+          <Property Name="q8_27days" Type="int" />
+          <Property Name="q8_28" Type="smallint" />
+          <Property Name="q8_29" Type="smallint" />
+          <Property Name="q8_30days" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_30hours" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_31" Type="smallint" />
+          <Property Name="q8_31_1_1" Type="int" />
+          <Property Name="q8_31_1_2" Type="int" />
+          <Property Name="q8_31_1_3" Type="int" />
+          <Property Name="q8_31_1_4" Type="int" />
+          <Property Name="q8_31_1_5" Type="int" />
+          <Property Name="q8_31_1_6" Type="int" />
+          <Property Name="q8_31_1_7" Type="int" />
+          <Property Name="q8_31_1_8" Type="int" />
+          <Property Name="q8_31_1Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_31_2hours" Type="int" />
+          <Property Name="q8_31_2days" Type="int" />
+          <Property Name="q8_31_3" Type="smallint" />
+          <Property Name="q8_31_4days" Type="int" />
+          <Property Name="q8_31_4weeks" Type="int" />
+          <Property Name="q8_32_1" Type="int" />
+          <Property Name="q8_32_2" Type="int" />
+          <Property Name="q8_32_3" Type="int" />
+          <Property Name="q8_32_4" Type="int" />
+          <Property Name="q8_32_5" Type="int" />
+          <Property Name="q8_32Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_33" Type="smallint" />
+          <Property Name="q8_33a" Type="smallint" />
+          <Property Name="q8_34hours" Type="int" />
+          <Property Name="q8_34days" Type="int" />
+          <Property Name="q8_35" Type="smallint" />
+          <Property Name="q8_36" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_37" Type="int" />
+          <Property Name="q8_37a" Type="smallint" />
+          <Property Name="q8_37b" Type="int" />
+          <Property Name="q8_38" Type="smallint" />
+          <Property Name="q8_39" Type="int" />
+          <Property Name="q8_40" Type="smallint" />
+          <Property Name="q8_41" Type="smallint" />
+          <Property Name="q8_42" Type="smallint" />
+          <Property Name="q8_43" Type="smallint" />
+          <Property Name="q8_44_1" Type="int" />
+          <Property Name="q8_44_2" Type="int" />
+          <Property Name="q8_44_3" Type="int" />
+          <Property Name="q8_44_4" Type="int" />
+          <Property Name="q8_44_5" Type="int" />
+          <Property Name="q8_44Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_45" Type="smallint" />
+          <Property Name="q8_46" Type="int" />
+          <Property Name="q8_46a" Type="smallint" />
+          <Property Name="q8_47" Type="int" />
+          <Property Name="q8_48" Type="smallint" />
+          <Property Name="q8_49" Type="smallint" />
+          <Property Name="q8_50" Type="nvarchar" MaxLength="20" />
+          <Property Name="q8_51" Type="int" />
+          <Property Name="q8_52" Type="smallint" />
+          <Property Name="q8_53" Type="smallint" />
+          <Property Name="q8_54hours" Type="int" />
+          <Property Name="q8_54days" Type="int" />
+          <Property Name="q8_55" Type="smallint" />
+          <Property Name="q8_56" Type="smallint" />
+          <Property Name="q8_57" Type="smallint" />
+          <Property Name="q8_58" Type="smallint" />
+          <Property Name="q8_58a" Type="smallint" />
+          <Property Name="q8_58aOther" Type="nvarchar" MaxLength="100" />
+          <Property Name="q8_59" Type="smallint" />
+          <Property Name="q8_60" Type="smallint" />
+          <Property Name="q8_61" Type="smallint" />
+          <Property Name="q8_62" Type="smallint" />
+          <Property Name="q9_1" Type="smallint" />
+          <Property Name="q9_2" Type="int" />
+          <Property Name="q9_3" Type="nvarchar" MaxLength="100" />
+          <Property Name="q9_3_1" Type="int" />
+          <Property Name="q9_3_2" Type="int" />
+          <Property Name="q9_3_3" Type="int" />
+          <Property Name="q9_3_4" Type="int" />
+          <Property Name="q9_3_5" Type="int" />
+          <Property Name="q9_3_6" Type="int" />
+          <Property Name="q9_3_7" Type="int" />
+          <Property Name="q9_3_8" Type="int" />
+          <Property Name="q9_3_9" Type="int" />
+          <Property Name="q9_3_10" Type="int" />
+          <Property Name="q9_3_10Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1" Type="smallint" />
+          <Property Name="q10_1_1" Type="int" />
+          <Property Name="q10_1_1Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1_2" Type="int" />
+          <Property Name="q10_1_2Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1_3" Type="int" />
+          <Property Name="q10_1_3Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1_4" Type="int" />
+          <Property Name="q10_1_4Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1_2_1" Type="int" />
+          <Property Name="q10_1_2_2" Type="int" />
+          <Property Name="q10_1_2_3" Type="int" />
+          <Property Name="q10_1_2_4" Type="int" />
+          <Property Name="q10_1_2_5" Type="int" />
+          <Property Name="q10_1_2_6" Type="int" />
+          <Property Name="q10_1_2_7" Type="int" />
+          <Property Name="q10_1_2_8" Type="int" />
+          <Property Name="q10_1_2_8Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_1_2_9" Type="int" />
+          <Property Name="q10_2" Type="smallint" />
+          <Property Name="q10_2_1" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_3" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_4" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_5" Type="datetime" />
+          <Property Name="q10_2_6" Type="datetime" />
+          <Property Name="q10_2_7" Type="datetime" />
+          <Property Name="q10_2_8" Type="datetime" />
+          <Property Name="q10_2_9" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_10" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_11" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_12" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_2_2a" Type="smallint" />
+          <Property Name="q10_3" Type="smallint" />
+          <Property Name="q10_3Other" Type="nvarchar" MaxLength="100" />
+          <Property Name="q10_3_1" Type="nvarchar" MaxLength="200" />
+          <Property Name="q10_3_2" Type="nvarchar" MaxLength="200" />
+          <Property Name="q10_3_3" Type="smallint" />
+          <Property Name="q10_3_4" Type="smallint" />
+          <Property Name="q10_3_5_1" Type="nvarchar" MaxLength="300" />
+          <Property Name="q10_3_5_2" Type="nvarchar" MaxLength="300" />
+          <Property Name="q11_1" Type="smallint" />
+          <Property Name="q11_2" Type="smallint" />
+          <Property Name="q11_3" Type="smallint" />
+          <Property Name="q11_4" Type="smallint" />
+          <Property Name="q11_5a_1" Type="nvarchar" MaxLength="300" />
+          <Property Name="q11_5a_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q11_5b_1" Type="nvarchar" MaxLength="300" />
+          <Property Name="q11_5b_2" Type="nvarchar" MaxLength="100" />
+          <Property Name="q12" Type="nvarchar" MaxLength="300" />
+          <Property Name="assetid" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="EntryBy" Type="nvarchar" MaxLength="10" />
+          <Property Name="EntryDate" Type="datetime" Nullable="false" />
+          <Property Name="EditBy" Type="nvarchar" MaxLength="10" />
+          <Property Name="EditDate" Type="datetime" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VANeonateModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="NeonateEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ViewForRpts" EntityType="VANeonateModel.ViewForRpt" />
+        </EntityContainer>
+        <EntityType Name="ViewForRpt">
+          <Key>
+            <PropertyRef Name="dataid" />
+            <PropertyRef Name="hospitalid" />
+            <PropertyRef Name="clusterid" />
+            <PropertyRef Name="decedanttype" />
+            <PropertyRef Name="decedantid" />
+            <PropertyRef Name="assetid" />
+            <PropertyRef Name="EntryDate" />
+          </Key>
+          <Property Name="dataid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="hospitalid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="clusterid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="decedanttype" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="decedantid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="neonateid" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1id1" Type="Int16" />
+          <Property Name="q1_1name1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1relp1" Type="Int16" />
+          <Property Name="q1_1relp1_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1pre1" Type="Byte" />
+          <Property Name="q1_1id2" Type="Int16" />
+          <Property Name="q1_1name2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1relp2" Type="Int16" />
+          <Property Name="q1_1relp2_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1pre2" Type="Byte" />
+          <Property Name="q1_1id3" Type="Int16" />
+          <Property Name="q1_1name3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1relp3" Type="Int16" />
+          <Property Name="q1_1relp3_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_1pre3" Type="Byte" />
+          <Property Name="q1_2" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="q1_3" Type="Int16" />
+          <Property Name="q1_3other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q1_4" Type="Int32" />
+          <Property Name="q1_5" Type="Int32" />
+          <Property Name="q1_6" Type="Int16" />
+          <Property Name="q2_1" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="q2_2" Type="DateTime" />
+          <Property Name="q2_3" Type="DateTime" />
+          <Property Name="q3_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_1_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_1_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_3code" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q3_4" Type="DateTime" />
+          <Property Name="q3_5" Type="DateTime" />
+          <Property Name="Calcq3_6days" Type="Int32" />
+          <Property Name="q3_6days" Type="Int32" />
+          <Property Name="q3_6hours" Type="Int32" />
+          <Property Name="q3_6mins" Type="Int32" />
+          <Property Name="q3_7" Type="Int16" />
+          <Property Name="q4_1_1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q4_1_2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q5_1" Type="Int16" />
+          <Property Name="q5_1_1" Type="Int16" />
+          <Property Name="q5_1_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q5_2" Type="Int16" />
+          <Property Name="q5_3" Type="Int16" />
+          <Property Name="q5_4days" Type="Int32" />
+          <Property Name="q5_4hours" Type="Int32" />
+          <Property Name="q5_4mins" Type="Int32" />
+          <Property Name="q5_5" Type="Int16" />
+          <Property Name="q6_1_1" Type="Int32" />
+          <Property Name="q6_1_2" Type="Int32" />
+          <Property Name="q6_1_3" Type="Int32" />
+          <Property Name="q6_1_4" Type="Int32" />
+          <Property Name="q6_1_5" Type="Int32" />
+          <Property Name="q6_1_6" Type="Int32" />
+          <Property Name="q6_1_7" Type="Int32" />
+          <Property Name="q6_1_8" Type="Int32" />
+          <Property Name="q6_1_9" Type="Int32" />
+          <Property Name="q6_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_2_1_1" Type="Int16" />
+          <Property Name="q6_2_1_1T" Type="Int16" />
+          <Property Name="q6_2_1_2" Type="Int16" />
+          <Property Name="q6_2_1_2T" Type="Int16" />
+          <Property Name="q6_2_1_3" Type="Int16" />
+          <Property Name="q6_2_1_3T" Type="Int16" />
+          <Property Name="q6_2_1_4" Type="Int16" />
+          <Property Name="q6_2_1_4T" Type="Int16" />
+          <Property Name="q6_2_2" Type="Int32" />
+          <Property Name="q6_2_3" Type="Int32" />
+          <Property Name="q6_2_4days" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_2_4months" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_2_4years" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_2_5" Type="Int32" />
+          <Property Name="q6_3_1" Type="Int16" />
+          <Property Name="q6_3_2" Type="Int16" />
+          <Property Name="q6_3_3" Type="Int16" />
+          <Property Name="q6_3_4" Type="Int16" />
+          <Property Name="q6_3_5" Type="Int16" />
+          <Property Name="q6_3_6" Type="Int16" />
+          <Property Name="q6_3_7" Type="Int16" />
+          <Property Name="q6_3_8" Type="Int16" />
+          <Property Name="q6_3_9" Type="Int16" />
+          <Property Name="q6_3_10" Type="Int16" />
+          <Property Name="q6_3_11" Type="Int16" />
+          <Property Name="q6_3_12" Type="Int16" />
+          <Property Name="q6_3_13" Type="Int16" />
+          <Property Name="q6_3_14" Type="Int16" />
+          <Property Name="q6_3_15" Type="Int16" />
+          <Property Name="q6_3_16" Type="Int16" />
+          <Property Name="q6_3_17" Type="Int16" />
+          <Property Name="q6_3_18" Type="Int16" />
+          <Property Name="q6_3_19" Type="Int16" />
+          <Property Name="q6_3_19a" Type="Int16" />
+          <Property Name="q6_3_20" Type="Int16" />
+          <Property Name="q6_3_21" Type="Int16" />
+          <Property Name="q6_3_22" Type="Int16" />
+          <Property Name="q6_3_23" Type="Int16" />
+          <Property Name="q6_3_24" Type="Int16" />
+          <Property Name="q6_3_25" Type="Int16" />
+          <Property Name="q6_3_26" Type="Int16" />
+          <Property Name="q6_3_27" Type="Int16" />
+          <Property Name="q6_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_3a_1months" Type="Int32" />
+          <Property Name="q6_3a_1days" Type="Int32" />
+          <Property Name="q6_3a_2amonth" Type="Int32" />
+          <Property Name="q6_3a_2adays" Type="Int32" />
+          <Property Name="q6_3a_2bmonth" Type="Int32" />
+          <Property Name="q6_3a_2bdays" Type="Int32" />
+          <Property Name="q6_3a_3" Type="Int16" />
+          <Property Name="q6_3a_4" Type="Int32" />
+          <Property Name="q6_3a_5" Type="Int16" />
+          <Property Name="q6_3a_6" Type="Int32" />
+          <Property Name="q6_3a_7" Type="Int16" />
+          <Property Name="q6_3a_8" Type="Int32" />
+          <Property Name="q6_4" Type="Int16" />
+          <Property Name="q6_5" Type="Int16" />
+          <Property Name="q6_5Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_5_1" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="q6_5_2_1" Type="Int32" />
+          <Property Name="q6_5_2_2" Type="Int32" />
+          <Property Name="q6_5_2_3" Type="Int32" />
+          <Property Name="q6_5_2_4" Type="Int32" />
+          <Property Name="q6_5_2_5" Type="Int32" />
+          <Property Name="q6_5_2_6" Type="Int32" />
+          <Property Name="q6_5_2_7" Type="Int32" />
+          <Property Name="q6_5_2_8" Type="Int32" />
+          <Property Name="q6_5_2_9" Type="Int32" />
+          <Property Name="q6_5_2_10" Type="Int32" />
+          <Property Name="q6_5_2_11" Type="Int32" />
+          <Property Name="q6_5_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_5_3_1" Type="Int32" />
+          <Property Name="q6_5_3_2" Type="Int32" />
+          <Property Name="q6_5_3_3" Type="Int32" />
+          <Property Name="q6_5_3_4" Type="Int32" />
+          <Property Name="q6_5_3_5" Type="Int32" />
+          <Property Name="q6_5_3_6" Type="Int32" />
+          <Property Name="q6_5_3_7" Type="Int32" />
+          <Property Name="q6_5_3_8" Type="Int32" />
+          <Property Name="q6_5_3_9" Type="Int32" />
+          <Property Name="q6_5_3_10" Type="Int32" />
+          <Property Name="q6_5_3_11" Type="Int32" />
+          <Property Name="q6_5_3_12" Type="Int32" />
+          <Property Name="q6_5_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_5_4" Type="Int32" />
+          <Property Name="q6_5_5" Type="Int16" />
+          <Property Name="q6_5_6" Type="Int16" />
+          <Property Name="q6_5_7" Type="Int32" />
+          <Property Name="q6_5_8" Type="Int16" />
+          <Property Name="q6_6_1" Type="Int32" />
+          <Property Name="q6_6_2" Type="Int32" />
+          <Property Name="q6_6_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q6_6_3" Type="Int16" />
+          <Property Name="q6_6_4" Type="Int16" />
+          <Property Name="q6_6_5" Type="Int16" />
+          <Property Name="q6_6_6" Type="Int16" />
+          <Property Name="q6_6_6a" Type="Int16" />
+          <Property Name="q6_6_6b" Type="Int16" />
+          <Property Name="q6_6_6d" Type="Int16" />
+          <Property Name="q6_6_7" Type="Int16" />
+          <Property Name="q7_1" Type="Int16" />
+          <Property Name="q7_2" Type="Int16" />
+          <Property Name="q7_3" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q7_4" Type="Double" />
+          <Property Name="q7_5" Type="Int16" />
+          <Property Name="q7_6" Type="Int16" />
+          <Property Name="q7_7" Type="Int16" />
+          <Property Name="q7_8" Type="Int32" />
+          <Property Name="q7_9" Type="Int16" />
+          <Property Name="q7_10" Type="Int16" />
+          <Property Name="q7_11" Type="Int16" />
+          <Property Name="q7_12" Type="Int16" />
+          <Property Name="q7_13" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q7_14" Type="Int16" />
+          <Property Name="q7_14Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_1" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="q8_2" Type="Int16" />
+          <Property Name="q8_3" Type="Int16" />
+          <Property Name="q8_4" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_5" Type="Int16" />
+          <Property Name="q8_5_1days" Type="Int32" />
+          <Property Name="q8_5_1hours" Type="Int32" />
+          <Property Name="q8_5_2" Type="Int16" />
+          <Property Name="q8_6" Type="Int16" />
+          <Property Name="q8_7" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_8" Type="Int16" />
+          <Property Name="q8_9" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_10" Type="Int16" />
+          <Property Name="q8_10_1" Type="Int16" />
+          <Property Name="q8_11" Type="Int16" />
+          <Property Name="q8_12" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_13" Type="Int16" />
+          <Property Name="q8_14" Type="Int32" />
+          <Property Name="q8_15" Type="Int16" />
+          <Property Name="q8_16" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_17" Type="Int16" />
+          <Property Name="q8_18" Type="Int16" />
+          <Property Name="q8_19" Type="Int16" />
+          <Property Name="q8_20" Type="Int16" />
+          <Property Name="q8_21" Type="Int16" />
+          <Property Name="q8_22" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_23" Type="Int16" />
+          <Property Name="q8_24" Type="Int16" />
+          <Property Name="q8_25days" Type="Int32" />
+          <Property Name="q8_25hours" Type="Int32" />
+          <Property Name="q8_26" Type="Int16" />
+          <Property Name="q8_27hours" Type="Int32" />
+          <Property Name="q8_27days" Type="Int32" />
+          <Property Name="q8_28" Type="Int16" />
+          <Property Name="q8_29" Type="Int16" />
+          <Property Name="q8_30days" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_30hours" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_31" Type="Int16" />
+          <Property Name="q8_31_1_1" Type="Int32" />
+          <Property Name="q8_31_1_2" Type="Int32" />
+          <Property Name="q8_31_1_3" Type="Int32" />
+          <Property Name="q8_31_1_4" Type="Int32" />
+          <Property Name="q8_31_1_5" Type="Int32" />
+          <Property Name="q8_31_1_6" Type="Int32" />
+          <Property Name="q8_31_1_7" Type="Int32" />
+          <Property Name="q8_31_1_8" Type="Int32" />
+          <Property Name="q8_31_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_31_2hours" Type="Int32" />
+          <Property Name="q8_31_2days" Type="Int32" />
+          <Property Name="q8_31_3" Type="Int16" />
+          <Property Name="q8_31_4days" Type="Int32" />
+          <Property Name="q8_31_4weeks" Type="Int32" />
+          <Property Name="q8_32_1" Type="Int32" />
+          <Property Name="q8_32_2" Type="Int32" />
+          <Property Name="q8_32_3" Type="Int32" />
+          <Property Name="q8_32_4" Type="Int32" />
+          <Property Name="q8_32_5" Type="Int32" />
+          <Property Name="q8_32Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_33" Type="Int16" />
+          <Property Name="q8_33a" Type="Int16" />
+          <Property Name="q8_34hours" Type="Int32" />
+          <Property Name="q8_34days" Type="Int32" />
+          <Property Name="q8_35" Type="Int16" />
+          <Property Name="q8_36" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_37" Type="Int32" />
+          <Property Name="q8_37a" Type="Int16" />
+          <Property Name="q8_37b" Type="Int32" />
+          <Property Name="q8_38" Type="Int16" />
+          <Property Name="q8_39" Type="Int32" />
+          <Property Name="q8_40" Type="Int16" />
+          <Property Name="q8_41" Type="Int16" />
+          <Property Name="q8_42" Type="Int16" />
+          <Property Name="q8_43" Type="Int16" />
+          <Property Name="q8_44_1" Type="Int32" />
+          <Property Name="q8_44_2" Type="Int32" />
+          <Property Name="q8_44_3" Type="Int32" />
+          <Property Name="q8_44_4" Type="Int32" />
+          <Property Name="q8_44_5" Type="Int32" />
+          <Property Name="q8_44Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_45" Type="Int16" />
+          <Property Name="q8_46" Type="Int32" />
+          <Property Name="q8_46a" Type="Int16" />
+          <Property Name="q8_47" Type="Int32" />
+          <Property Name="q8_48" Type="Int16" />
+          <Property Name="q8_49" Type="Int16" />
+          <Property Name="q8_50" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="q8_51" Type="Int32" />
+          <Property Name="q8_52" Type="Int16" />
+          <Property Name="q8_53" Type="Int16" />
+          <Property Name="q8_54hours" Type="Int32" />
+          <Property Name="q8_54days" Type="Int32" />
+          <Property Name="q8_55" Type="Int16" />
+          <Property Name="q8_56" Type="Int16" />
+          <Property Name="q8_57" Type="Int16" />
+          <Property Name="q8_58" Type="Int16" />
+          <Property Name="q8_58a" Type="Int16" />
+          <Property Name="q8_58aOther" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q8_59" Type="Int16" />
+          <Property Name="q8_60" Type="Int16" />
+          <Property Name="q8_61" Type="Int16" />
+          <Property Name="q8_62" Type="Int16" />
+          <Property Name="q9_1" Type="Int16" />
+          <Property Name="q9_2" Type="Int32" />
+          <Property Name="q9_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q9_3_1" Type="Int32" />
+          <Property Name="q9_3_2" Type="Int32" />
+          <Property Name="q9_3_3" Type="Int32" />
+          <Property Name="q9_3_4" Type="Int32" />
+          <Property Name="q9_3_5" Type="Int32" />
+          <Property Name="q9_3_6" Type="Int32" />
+          <Property Name="q9_3_7" Type="Int32" />
+          <Property Name="q9_3_8" Type="Int32" />
+          <Property Name="q9_3_9" Type="Int32" />
+          <Property Name="q9_3_10" Type="Int32" />
+          <Property Name="q9_3_10Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1" Type="Int16" />
+          <Property Name="q10_1_1" Type="Int32" />
+          <Property Name="q10_1_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1_2" Type="Int32" />
+          <Property Name="q10_1_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1_3" Type="Int32" />
+          <Property Name="q10_1_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1_4" Type="Int32" />
+          <Property Name="q10_1_4Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1_2_1" Type="Int32" />
+          <Property Name="q10_1_2_2" Type="Int32" />
+          <Property Name="q10_1_2_3" Type="Int32" />
+          <Property Name="q10_1_2_4" Type="Int32" />
+          <Property Name="q10_1_2_5" Type="Int32" />
+          <Property Name="q10_1_2_6" Type="Int32" />
+          <Property Name="q10_1_2_7" Type="Int32" />
+          <Property Name="q10_1_2_8" Type="Int32" />
+          <Property Name="q10_1_2_8Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_1_2_9" Type="Int32" />
+          <Property Name="q10_2" Type="Int16" />
+          <Property Name="q10_2_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_5" Type="DateTime" />
+          <Property Name="q10_2_6" Type="DateTime" />
+          <Property Name="q10_2_7" Type="DateTime" />
+          <Property Name="q10_2_8" Type="DateTime" />
+          <Property Name="q10_2_9" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_10" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_11" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_12" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_2_2a" Type="Int16" />
+          <Property Name="q10_3" Type="Int16" />
+          <Property Name="q10_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q10_3_1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q10_3_2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="q10_3_3" Type="Int16" />
+          <Property Name="q10_3_4" Type="Int16" />
+          <Property Name="q10_3_5_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="q10_3_5_2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="q11_1" Type="Int16" />
+          <Property Name="q11_2" Type="Int16" />
+          <Property Name="q11_3" Type="Int16" />
+          <Property Name="q11_4" Type="Int16" />
+          <Property Name="q11_5a_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="q11_5a_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q11_5b_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="q11_5b_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="q12" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="assetid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="EntryBy" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="EntryDate" Type="DateTime" Nullable="false" />
+          <Property Name="EditBy" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="EditDate" Type="DateTime" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VANeonateModelStoreContainer" CdmEntityContainer="NeonateEntities">
+          <EntitySetMapping Name="ViewForRpts">
+            <EntityTypeMapping TypeName="VANeonateModel.ViewForRpt">
+              <MappingFragment StoreEntitySet="ViewForRpt">
+                <ScalarProperty Name="dataid" ColumnName="dataid" />
+                <ScalarProperty Name="hospitalid" ColumnName="hospitalid" />
+                <ScalarProperty Name="clusterid" ColumnName="clusterid" />
+                <ScalarProperty Name="decedanttype" ColumnName="decedanttype" />
+                <ScalarProperty Name="decedantid" ColumnName="decedantid" />
+                <ScalarProperty Name="neonateid" ColumnName="neonateid" />
+                <ScalarProperty Name="q1_1id1" ColumnName="q1_1id1" />
+                <ScalarProperty Name="q1_1name1" ColumnName="q1_1name1" />
+                <ScalarProperty Name="q1_1relp1" ColumnName="q1_1relp1" />
+                <ScalarProperty Name="q1_1relp1_other" ColumnName="q1_1relp1_other" />
+                <ScalarProperty Name="q1_1pre1" ColumnName="q1_1pre1" />
+                <ScalarProperty Name="q1_1id2" ColumnName="q1_1id2" />
+                <ScalarProperty Name="q1_1name2" ColumnName="q1_1name2" />
+                <ScalarProperty Name="q1_1relp2" ColumnName="q1_1relp2" />
+                <ScalarProperty Name="q1_1relp2_other" ColumnName="q1_1relp2_other" />
+                <ScalarProperty Name="q1_1pre2" ColumnName="q1_1pre2" />
+                <ScalarProperty Name="q1_1id3" ColumnName="q1_1id3" />
+                <ScalarProperty Name="q1_1name3" ColumnName="q1_1name3" />
+                <ScalarProperty Name="q1_1relp3" ColumnName="q1_1relp3" />
+                <ScalarProperty Name="q1_1relp3_other" ColumnName="q1_1relp3_other" />
+                <ScalarProperty Name="q1_1pre3" ColumnName="q1_1pre3" />
+                <ScalarProperty Name="q1_2" ColumnName="q1_2" />
+                <ScalarProperty Name="q1_3" ColumnName="q1_3" />
+                <ScalarProperty Name="q1_3other" ColumnName="q1_3other" />
+                <ScalarProperty Name="q1_4" ColumnName="q1_4" />
+                <ScalarProperty Name="q1_5" ColumnName="q1_5" />
+                <ScalarProperty Name="q1_6" ColumnName="q1_6" />
+                <ScalarProperty Name="q2_1" ColumnName="q2_1" />
+                <ScalarProperty Name="q2_2" ColumnName="q2_2" />
+                <ScalarProperty Name="q2_3" ColumnName="q2_3" />
+                <ScalarProperty Name="q3_1" ColumnName="q3_1" />
+                <ScalarProperty Name="q3_1_1" ColumnName="q3_1_1" />
+                <ScalarProperty Name="q3_1_2" ColumnName="q3_1_2" />
+                <ScalarProperty Name="q3_2" ColumnName="q3_2" />
+                <ScalarProperty Name="q3_3" ColumnName="q3_3" />
+                <ScalarProperty Name="q3_3code" ColumnName="q3_3code" />
+                <ScalarProperty Name="q3_4" ColumnName="q3_4" />
+                <ScalarProperty Name="q3_5" ColumnName="q3_5" />
+                <ScalarProperty Name="Calcq3_6days" ColumnName="Calcq3_6days" />
+                <ScalarProperty Name="q3_6days" ColumnName="q3_6days" />
+                <ScalarProperty Name="q3_6hours" ColumnName="q3_6hours" />
+                <ScalarProperty Name="q3_6mins" ColumnName="q3_6mins" />
+                <ScalarProperty Name="q3_7" ColumnName="q3_7" />
+                <ScalarProperty Name="q4_1_1" ColumnName="q4_1_1" />
+                <ScalarProperty Name="q4_1_2" ColumnName="q4_1_2" />
+                <ScalarProperty Name="q5_1" ColumnName="q5_1" />
+                <ScalarProperty Name="q5_1_1" ColumnName="q5_1_1" />
+                <ScalarProperty Name="q5_1_1Other" ColumnName="q5_1_1Other" />
+                <ScalarProperty Name="q5_2" ColumnName="q5_2" />
+                <ScalarProperty Name="q5_3" ColumnName="q5_3" />
+                <ScalarProperty Name="q5_4days" ColumnName="q5_4days" />
+                <ScalarProperty Name="q5_4hours" ColumnName="q5_4hours" />
+                <ScalarProperty Name="q5_4mins" ColumnName="q5_4mins" />
+                <ScalarProperty Name="q5_5" ColumnName="q5_5" />
+                <ScalarProperty Name="q6_1_1" ColumnName="q6_1_1" />
+                <ScalarProperty Name="q6_1_2" ColumnName="q6_1_2" />
+                <ScalarProperty Name="q6_1_3" ColumnName="q6_1_3" />
+                <ScalarProperty Name="q6_1_4" ColumnName="q6_1_4" />
+                <ScalarProperty Name="q6_1_5" ColumnName="q6_1_5" />
+                <ScalarProperty Name="q6_1_6" ColumnName="q6_1_6" />
+                <ScalarProperty Name="q6_1_7" ColumnName="q6_1_7" />
+                <ScalarProperty Name="q6_1_8" ColumnName="q6_1_8" />
+                <ScalarProperty Name="q6_1_9" ColumnName="q6_1_9" />
+                <ScalarProperty Name="q6_1Other" ColumnName="q6_1Other" />
+                <ScalarProperty Name="q6_2_1_1" ColumnName="q6_2_1_1" />
+                <ScalarProperty Name="q6_2_1_1T" ColumnName="q6_2_1_1T" />
+                <ScalarProperty Name="q6_2_1_2" ColumnName="q6_2_1_2" />
+                <ScalarProperty Name="q6_2_1_2T" ColumnName="q6_2_1_2T" />
+                <ScalarProperty Name="q6_2_1_3" ColumnName="q6_2_1_3" />
+                <ScalarProperty Name="q6_2_1_3T" ColumnName="q6_2_1_3T" />
+                <ScalarProperty Name="q6_2_1_4" ColumnName="q6_2_1_4" />
+                <ScalarProperty Name="q6_2_1_4T" ColumnName="q6_2_1_4T" />
+                <ScalarProperty Name="q6_2_2" ColumnName="q6_2_2" />
+                <ScalarProperty Name="q6_2_3" ColumnName="q6_2_3" />
+                <ScalarProperty Name="q6_2_4days" ColumnName="q6_2_4days" />
+                <ScalarProperty Name="q6_2_4months" ColumnName="q6_2_4months" />
+                <ScalarProperty Name="q6_2_4years" ColumnName="q6_2_4years" />
+                <ScalarProperty Name="q6_2_5" ColumnName="q6_2_5" />
+                <ScalarProperty Name="q6_3_1" ColumnName="q6_3_1" />
+                <ScalarProperty Name="q6_3_2" ColumnName="q6_3_2" />
+                <ScalarProperty Name="q6_3_3" ColumnName="q6_3_3" />
+                <ScalarProperty Name="q6_3_4" ColumnName="q6_3_4" />
+                <ScalarProperty Name="q6_3_5" ColumnName="q6_3_5" />
+                <ScalarProperty Name="q6_3_6" ColumnName="q6_3_6" />
+                <ScalarProperty Name="q6_3_7" ColumnName="q6_3_7" />
+                <ScalarProperty Name="q6_3_8" ColumnName="q6_3_8" />
+                <ScalarProperty Name="q6_3_9" ColumnName="q6_3_9" />
+                <ScalarProperty Name="q6_3_10" ColumnName="q6_3_10" />
+                <ScalarProperty Name="q6_3_11" ColumnName="q6_3_11" />
+                <ScalarProperty Name="q6_3_12" ColumnName="q6_3_12" />
+                <ScalarProperty Name="q6_3_13" ColumnName="q6_3_13" />
+                <ScalarProperty Name="q6_3_14" ColumnName="q6_3_14" />
+                <ScalarProperty Name="q6_3_15" ColumnName="q6_3_15" />
+                <ScalarProperty Name="q6_3_16" ColumnName="q6_3_16" />
+                <ScalarProperty Name="q6_3_17" ColumnName="q6_3_17" />
+                <ScalarProperty Name="q6_3_18" ColumnName="q6_3_18" />
+                <ScalarProperty Name="q6_3_19" ColumnName="q6_3_19" />
+                <ScalarProperty Name="q6_3_19a" ColumnName="q6_3_19a" />
+                <ScalarProperty Name="q6_3_20" ColumnName="q6_3_20" />
+                <ScalarProperty Name="q6_3_21" ColumnName="q6_3_21" />
+                <ScalarProperty Name="q6_3_22" ColumnName="q6_3_22" />
+                <ScalarProperty Name="q6_3_23" ColumnName="q6_3_23" />
+                <ScalarProperty Name="q6_3_24" ColumnName="q6_3_24" />
+                <ScalarProperty Name="q6_3_25" ColumnName="q6_3_25" />
+                <ScalarProperty Name="q6_3_26" ColumnName="q6_3_26" />
+                <ScalarProperty Name="q6_3_27" ColumnName="q6_3_27" />
+                <ScalarProperty Name="q6_3Other" ColumnName="q6_3Other" />
+                <ScalarProperty Name="q6_3a_1months" ColumnName="q6_3a_1months" />
+                <ScalarProperty Name="q6_3a_1days" ColumnName="q6_3a_1days" />
+                <ScalarProperty Name="q6_3a_2amonth" ColumnName="q6_3a_2amonth" />
+                <ScalarProperty Name="q6_3a_2adays" ColumnName="q6_3a_2adays" />
+                <ScalarProperty Name="q6_3a_2bmonth" ColumnName="q6_3a_2bmonth" />
+                <ScalarProperty Name="q6_3a_2bdays" ColumnName="q6_3a_2bdays" />
+                <ScalarProperty Name="q6_3a_3" ColumnName="q6_3a_3" />
+                <ScalarProperty Name="q6_3a_4" ColumnName="q6_3a_4" />
+                <ScalarProperty Name="q6_3a_5" ColumnName="q6_3a_5" />
+                <ScalarProperty Name="q6_3a_6" ColumnName="q6_3a_6" />
+                <ScalarProperty Name="q6_3a_7" ColumnName="q6_3a_7" />
+                <ScalarProperty Name="q6_3a_8" ColumnName="q6_3a_8" />
+                <ScalarProperty Name="q6_4" ColumnName="q6_4" />
+                <ScalarProperty Name="q6_5" ColumnName="q6_5" />
+                <ScalarProperty Name="q6_5Other" ColumnName="q6_5Other" />
+                <ScalarProperty Name="q6_5_1" ColumnName="q6_5_1" />
+                <ScalarProperty Name="q6_5_2_1" ColumnName="q6_5_2_1" />
+                <ScalarProperty Name="q6_5_2_2" ColumnName="q6_5_2_2" />
+                <ScalarProperty Name="q6_5_2_3" ColumnName="q6_5_2_3" />
+                <ScalarProperty Name="q6_5_2_4" ColumnName="q6_5_2_4" />
+                <ScalarProperty Name="q6_5_2_5" ColumnName="q6_5_2_5" />
+                <ScalarProperty Name="q6_5_2_6" ColumnName="q6_5_2_6" />
+                <ScalarProperty Name="q6_5_2_7" ColumnName="q6_5_2_7" />
+                <ScalarProperty Name="q6_5_2_8" ColumnName="q6_5_2_8" />
+                <ScalarProperty Name="q6_5_2_9" ColumnName="q6_5_2_9" />
+                <ScalarProperty Name="q6_5_2_10" ColumnName="q6_5_2_10" />
+                <ScalarProperty Name="q6_5_2_11" ColumnName="q6_5_2_11" />
+                <ScalarProperty Name="q6_5_2Other" ColumnName="q6_5_2Other" />
+                <ScalarProperty Name="q6_5_3_1" ColumnName="q6_5_3_1" />
+                <ScalarProperty Name="q6_5_3_2" ColumnName="q6_5_3_2" />
+                <ScalarProperty Name="q6_5_3_3" ColumnName="q6_5_3_3" />
+                <ScalarProperty Name="q6_5_3_4" ColumnName="q6_5_3_4" />
+                <ScalarProperty Name="q6_5_3_5" ColumnName="q6_5_3_5" />
+                <ScalarProperty Name="q6_5_3_6" ColumnName="q6_5_3_6" />
+                <ScalarProperty Name="q6_5_3_7" ColumnName="q6_5_3_7" />
+                <ScalarProperty Name="q6_5_3_8" ColumnName="q6_5_3_8" />
+                <ScalarProperty Name="q6_5_3_9" ColumnName="q6_5_3_9" />
+                <ScalarProperty Name="q6_5_3_10" ColumnName="q6_5_3_10" />
+                <ScalarProperty Name="q6_5_3_11" ColumnName="q6_5_3_11" />
+                <ScalarProperty Name="q6_5_3_12" ColumnName="q6_5_3_12" />
+                <ScalarProperty Name="q6_5_3Other" ColumnName="q6_5_3Other" />
+                <ScalarProperty Name="q6_5_4" ColumnName="q6_5_4" />
+                <ScalarProperty Name="q6_5_5" ColumnName="q6_5_5" />
+                <ScalarProperty Name="q6_5_6" ColumnName="q6_5_6" />
+                <ScalarProperty Name="q6_5_7" ColumnName="q6_5_7" />
+                <ScalarProperty Name="q6_5_8" ColumnName="q6_5_8" />
+                <ScalarProperty Name="q6_6_1" ColumnName="q6_6_1" />
+                <ScalarProperty Name="q6_6_2" ColumnName="q6_6_2" />
+                <ScalarProperty Name="q6_6_2Other" ColumnName="q6_6_2Other" />
+                <ScalarProperty Name="q6_6_3" ColumnName="q6_6_3" />
+                <ScalarProperty Name="q6_6_4" ColumnName="q6_6_4" />
+                <ScalarProperty Name="q6_6_5" ColumnName="q6_6_5" />
+                <ScalarProperty Name="q6_6_6" ColumnName="q6_6_6" />
+                <ScalarProperty Name="q6_6_6a" ColumnName="q6_6_6a" />
+                <ScalarProperty Name="q6_6_6b" ColumnName="q6_6_6b" />
+                <ScalarProperty Name="q6_6_6d" ColumnName="q6_6_6d" />
+                <ScalarProperty Name="q6_6_7" ColumnName="q6_6_7" />
+                <ScalarProperty Name="q7_1" ColumnName="q7_1" />
+                <ScalarProperty Name="q7_2" ColumnName="q7_2" />
+                <ScalarProperty Name="q7_3" ColumnName="q7_3" />
+                <ScalarProperty Name="q7_4" ColumnName="q7_4" />
+                <ScalarProperty Name="q7_5" ColumnName="q7_5" />
+                <ScalarProperty Name="q7_6" ColumnName="q7_6" />
+                <ScalarProperty Name="q7_7" ColumnName="q7_7" />
+                <ScalarProperty Name="q7_8" ColumnName="q7_8" />
+                <ScalarProperty Name="q7_9" ColumnName="q7_9" />
+                <ScalarProperty Name="q7_10" ColumnName="q7_10" />
+                <ScalarProperty Name="q7_11" ColumnName="q7_11" />
+                <ScalarProperty Name="q7_12" ColumnName="q7_12" />
+                <ScalarProperty Name="q7_13" ColumnName="q7_13" />
+                <ScalarProperty Name="q7_14" ColumnName="q7_14" />
+                <ScalarProperty Name="q7_14Other" ColumnName="q7_14Other" />
+                <ScalarProperty Name="q8_1" ColumnName="q8_1" />
+                <ScalarProperty Name="q8_2" ColumnName="q8_2" />
+                <ScalarProperty Name="q8_3" ColumnName="q8_3" />
+                <ScalarProperty Name="q8_4" ColumnName="q8_4" />
+                <ScalarProperty Name="q8_5" ColumnName="q8_5" />
+                <ScalarProperty Name="q8_5_1days" ColumnName="q8_5_1days" />
+                <ScalarProperty Name="q8_5_1hours" ColumnName="q8_5_1hours" />
+                <ScalarProperty Name="q8_5_2" ColumnName="q8_5_2" />
+                <ScalarProperty Name="q8_6" ColumnName="q8_6" />
+                <ScalarProperty Name="q8_7" ColumnName="q8_7" />
+                <ScalarProperty Name="q8_8" ColumnName="q8_8" />
+                <ScalarProperty Name="q8_9" ColumnName="q8_9" />
+                <ScalarProperty Name="q8_10" ColumnName="q8_10" />
+                <ScalarProperty Name="q8_10_1" ColumnName="q8_10_1" />
+                <ScalarProperty Name="q8_11" ColumnName="q8_11" />
+                <ScalarProperty Name="q8_12" ColumnName="q8_12" />
+                <ScalarProperty Name="q8_13" ColumnName="q8_13" />
+                <ScalarProperty Name="q8_14" ColumnName="q8_14" />
+                <ScalarProperty Name="q8_15" ColumnName="q8_15" />
+                <ScalarProperty Name="q8_16" ColumnName="q8_16" />
+                <ScalarProperty Name="q8_17" ColumnName="q8_17" />
+                <ScalarProperty Name="q8_18" ColumnName="q8_18" />
+                <ScalarProperty Name="q8_19" ColumnName="q8_19" />
+                <ScalarProperty Name="q8_20" ColumnName="q8_20" />
+                <ScalarProperty Name="q8_21" ColumnName="q8_21" />
+                <ScalarProperty Name="q8_22" ColumnName="q8_22" />
+                <ScalarProperty Name="q8_23" ColumnName="q8_23" />
+                <ScalarProperty Name="q8_24" ColumnName="q8_24" />
+                <ScalarProperty Name="q8_25days" ColumnName="q8_25days" />
+                <ScalarProperty Name="q8_25hours" ColumnName="q8_25hours" />
+                <ScalarProperty Name="q8_26" ColumnName="q8_26" />
+                <ScalarProperty Name="q8_27hours" ColumnName="q8_27hours" />
+                <ScalarProperty Name="q8_27days" ColumnName="q8_27days" />
+                <ScalarProperty Name="q8_28" ColumnName="q8_28" />
+                <ScalarProperty Name="q8_29" ColumnName="q8_29" />
+                <ScalarProperty Name="q8_30days" ColumnName="q8_30days" />
+                <ScalarProperty Name="q8_30hours" ColumnName="q8_30hours" />
+                <ScalarProperty Name="q8_31" ColumnName="q8_31" />
+                <ScalarProperty Name="q8_31_1_1" ColumnName="q8_31_1_1" />
+                <ScalarProperty Name="q8_31_1_2" ColumnName="q8_31_1_2" />
+                <ScalarProperty Name="q8_31_1_3" ColumnName="q8_31_1_3" />
+                <ScalarProperty Name="q8_31_1_4" ColumnName="q8_31_1_4" />
+                <ScalarProperty Name="q8_31_1_5" ColumnName="q8_31_1_5" />
+                <ScalarProperty Name="q8_31_1_6" ColumnName="q8_31_1_6" />
+                <ScalarProperty Name="q8_31_1_7" ColumnName="q8_31_1_7" />
+                <ScalarProperty Name="q8_31_1_8" ColumnName="q8_31_1_8" />
+                <ScalarProperty Name="q8_31_1Other" ColumnName="q8_31_1Other" />
+                <ScalarProperty Name="q8_31_2hours" ColumnName="q8_31_2hours" />
+                <ScalarProperty Name="q8_31_2days" ColumnName="q8_31_2days" />
+                <ScalarProperty Name="q8_31_3" ColumnName="q8_31_3" />
+                <ScalarProperty Name="q8_31_4days" ColumnName="q8_31_4days" />
+                <ScalarProperty Name="q8_31_4weeks" ColumnName="q8_31_4weeks" />
+                <ScalarProperty Name="q8_32_1" ColumnName="q8_32_1" />
+                <ScalarProperty Name="q8_32_2" ColumnName="q8_32_2" />
+                <ScalarProperty Name="q8_32_3" ColumnName="q8_32_3" />
+                <ScalarProperty Name="q8_32_4" ColumnName="q8_32_4" />
+                <ScalarProperty Name="q8_32_5" ColumnName="q8_32_5" />
+                <ScalarProperty Name="q8_32Other" ColumnName="q8_32Other" />
+                <ScalarProperty Name="q8_33" ColumnName="q8_33" />
+                <ScalarProperty Name="q8_33a" ColumnName="q8_33a" />
+                <ScalarProperty Name="q8_34hours" ColumnName="q8_34hours" />
+                <ScalarProperty Name="q8_34days" ColumnName="q8_34days" />
+                <ScalarProperty Name="q8_35" ColumnName="q8_35" />
+                <ScalarProperty Name="q8_36" ColumnName="q8_36" />
+                <ScalarProperty Name="q8_37" ColumnName="q8_37" />
+                <ScalarProperty Name="q8_37a" ColumnName="q8_37a" />
+                <ScalarProperty Name="q8_37b" ColumnName="q8_37b" />
+                <ScalarProperty Name="q8_38" ColumnName="q8_38" />
+                <ScalarProperty Name="q8_39" ColumnName="q8_39" />
+                <ScalarProperty Name="q8_40" ColumnName="q8_40" />
+                <ScalarProperty Name="q8_41" ColumnName="q8_41" />
+                <ScalarProperty Name="q8_42" ColumnName="q8_42" />
+                <ScalarProperty Name="q8_43" ColumnName="q8_43" />
+                <ScalarProperty Name="q8_44_1" ColumnName="q8_44_1" />
+                <ScalarProperty Name="q8_44_2" ColumnName="q8_44_2" />
+                <ScalarProperty Name="q8_44_3" ColumnName="q8_44_3" />
+                <ScalarProperty Name="q8_44_4" ColumnName="q8_44_4" />
+                <ScalarProperty Name="q8_44_5" ColumnName="q8_44_5" />
+                <ScalarProperty Name="q8_44Other" ColumnName="q8_44Other" />
+                <ScalarProperty Name="q8_45" ColumnName="q8_45" />
+                <ScalarProperty Name="q8_46" ColumnName="q8_46" />
+                <ScalarProperty Name="q8_46a" ColumnName="q8_46a" />
+                <ScalarProperty Name="q8_47" ColumnName="q8_47" />
+                <ScalarProperty Name="q8_48" ColumnName="q8_48" />
+                <ScalarProperty Name="q8_49" ColumnName="q8_49" />
+                <ScalarProperty Name="q8_50" ColumnName="q8_50" />
+                <ScalarProperty Name="q8_51" ColumnName="q8_51" />
+                <ScalarProperty Name="q8_52" ColumnName="q8_52" />
+                <ScalarProperty Name="q8_53" ColumnName="q8_53" />
+                <ScalarProperty Name="q8_54hours" ColumnName="q8_54hours" />
+                <ScalarProperty Name="q8_54days" ColumnName="q8_54days" />
+                <ScalarProperty Name="q8_55" ColumnName="q8_55" />
+                <ScalarProperty Name="q8_56" ColumnName="q8_56" />
+                <ScalarProperty Name="q8_57" ColumnName="q8_57" />
+                <ScalarProperty Name="q8_58" ColumnName="q8_58" />
+                <ScalarProperty Name="q8_58a" ColumnName="q8_58a" />
+                <ScalarProperty Name="q8_58aOther" ColumnName="q8_58aOther" />
+                <ScalarProperty Name="q8_59" ColumnName="q8_59" />
+                <ScalarProperty Name="q8_60" ColumnName="q8_60" />
+                <ScalarProperty Name="q8_61" ColumnName="q8_61" />
+                <ScalarProperty Name="q8_62" ColumnName="q8_62" />
+                <ScalarProperty Name="q9_1" ColumnName="q9_1" />
+                <ScalarProperty Name="q9_2" ColumnName="q9_2" />
+                <ScalarProperty Name="q9_3" ColumnName="q9_3" />
+                <ScalarProperty Name="q9_3_1" ColumnName="q9_3_1" />
+                <ScalarProperty Name="q9_3_2" ColumnName="q9_3_2" />
+                <ScalarProperty Name="q9_3_3" ColumnName="q9_3_3" />
+                <ScalarProperty Name="q9_3_4" ColumnName="q9_3_4" />
+                <ScalarProperty Name="q9_3_5" ColumnName="q9_3_5" />
+                <ScalarProperty Name="q9_3_6" ColumnName="q9_3_6" />
+                <ScalarProperty Name="q9_3_7" ColumnName="q9_3_7" />
+                <ScalarProperty Name="q9_3_8" ColumnName="q9_3_8" />
+                <ScalarProperty Name="q9_3_9" ColumnName="q9_3_9" />
+                <ScalarProperty Name="q9_3_10" ColumnName="q9_3_10" />
+                <ScalarProperty Name="q9_3_10Other" ColumnName="q9_3_10Other" />
+                <ScalarProperty Name="q10_1" ColumnName="q10_1" />
+                <ScalarProperty Name="q10_1_1" ColumnName="q10_1_1" />
+                <ScalarProperty Name="q10_1_1Other" ColumnName="q10_1_1Other" />
+                <ScalarProperty Name="q10_1_2" ColumnName="q10_1_2" />
+                <ScalarProperty Name="q10_1_2Other" ColumnName="q10_1_2Other" />
+                <ScalarProperty Name="q10_1_3" ColumnName="q10_1_3" />
+                <ScalarProperty Name="q10_1_3Other" ColumnName="q10_1_3Other" />
+                <ScalarProperty Name="q10_1_4" ColumnName="q10_1_4" />
+                <ScalarProperty Name="q10_1_4Other" ColumnName="q10_1_4Other" />
+                <ScalarProperty Name="q10_1_2_1" ColumnName="q10_1_2_1" />
+                <ScalarProperty Name="q10_1_2_2" ColumnName="q10_1_2_2" />
+                <ScalarProperty Name="q10_1_2_3" ColumnName="q10_1_2_3" />
+                <ScalarProperty Name="q10_1_2_4" ColumnName="q10_1_2_4" />
+                <ScalarProperty Name="q10_1_2_5" ColumnName="q10_1_2_5" />
+                <ScalarProperty Name="q10_1_2_6" ColumnName="q10_1_2_6" />
+                <ScalarProperty Name="q10_1_2_7" ColumnName="q10_1_2_7" />
+                <ScalarProperty Name="q10_1_2_8" ColumnName="q10_1_2_8" />
+                <ScalarProperty Name="q10_1_2_8Other" ColumnName="q10_1_2_8Other" />
+                <ScalarProperty Name="q10_1_2_9" ColumnName="q10_1_2_9" />
+                <ScalarProperty Name="q10_2" ColumnName="q10_2" />
+                <ScalarProperty Name="q10_2_1" ColumnName="q10_2_1" />
+                <ScalarProperty Name="q10_2_2" ColumnName="q10_2_2" />
+                <ScalarProperty Name="q10_2_3" ColumnName="q10_2_3" />
+                <ScalarProperty Name="q10_2_4" ColumnName="q10_2_4" />
+                <ScalarProperty Name="q10_2_5" ColumnName="q10_2_5" />
+                <ScalarProperty Name="q10_2_6" ColumnName="q10_2_6" />
+                <ScalarProperty Name="q10_2_7" ColumnName="q10_2_7" />
+                <ScalarProperty Name="q10_2_8" ColumnName="q10_2_8" />
+                <ScalarProperty Name="q10_2_9" ColumnName="q10_2_9" />
+                <ScalarProperty Name="q10_2_10" ColumnName="q10_2_10" />
+                <ScalarProperty Name="q10_2_11" ColumnName="q10_2_11" />
+                <ScalarProperty Name="q10_2_12" ColumnName="q10_2_12" />
+                <ScalarProperty Name="q10_2_2a" ColumnName="q10_2_2a" />
+                <ScalarProperty Name="q10_3" ColumnName="q10_3" />
+                <ScalarProperty Name="q10_3Other" ColumnName="q10_3Other" />
+                <ScalarProperty Name="q10_3_1" ColumnName="q10_3_1" />
+                <ScalarProperty Name="q10_3_2" ColumnName="q10_3_2" />
+                <ScalarProperty Name="q10_3_3" ColumnName="q10_3_3" />
+                <ScalarProperty Name="q10_3_4" ColumnName="q10_3_4" />
+                <ScalarProperty Name="q10_3_5_1" ColumnName="q10_3_5_1" />
+                <ScalarProperty Name="q10_3_5_2" ColumnName="q10_3_5_2" />
+                <ScalarProperty Name="q11_1" ColumnName="q11_1" />
+                <ScalarProperty Name="q11_2" ColumnName="q11_2" />
+                <ScalarProperty Name="q11_3" ColumnName="q11_3" />
+                <ScalarProperty Name="q11_4" ColumnName="q11_4" />
+                <ScalarProperty Name="q11_5a_1" ColumnName="q11_5a_1" />
+                <ScalarProperty Name="q11_5a_2" ColumnName="q11_5a_2" />
+                <ScalarProperty Name="q11_5b_1" ColumnName="q11_5b_1" />
+                <ScalarProperty Name="q11_5b_2" ColumnName="q11_5b_2" />
+                <ScalarProperty Name="q12" ColumnName="q12" />
+                <ScalarProperty Name="assetid" ColumnName="assetid" />
+                <ScalarProperty Name="EntryBy" ColumnName="EntryBy" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="EditBy" ColumnName="EditBy" />
+                <ScalarProperty Name="EditDate" ColumnName="EditDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="NeonateModel" ZoomLevel="10">
+        <EntityTypeShape EntityType="VANeonateModel.ViewForRpt" Width="1.5" PointX="0.75" PointY="0.75" Height="68.131979166666653" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

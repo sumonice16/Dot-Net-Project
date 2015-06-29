@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VANeonateModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="NeonateEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ViewForRpts" EntityType="VANeonateModel.ViewForRpt" />
+  </EntityContainer>
+  <EntityType Name="ViewForRpt">
+    <Key>
+      <PropertyRef Name="dataid" />
+      <PropertyRef Name="hospitalid" />
+      <PropertyRef Name="clusterid" />
+      <PropertyRef Name="decedanttype" />
+      <PropertyRef Name="decedantid" />
+      <PropertyRef Name="assetid" />
+      <PropertyRef Name="EntryDate" />
+    </Key>
+    <Property Name="dataid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="hospitalid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="clusterid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="decedanttype" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="decedantid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="neonateid" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1id1" Type="Int16" />
+    <Property Name="q1_1name1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1relp1" Type="Int16" />
+    <Property Name="q1_1relp1_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1pre1" Type="Byte" />
+    <Property Name="q1_1id2" Type="Int16" />
+    <Property Name="q1_1name2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1relp2" Type="Int16" />
+    <Property Name="q1_1relp2_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1pre2" Type="Byte" />
+    <Property Name="q1_1id3" Type="Int16" />
+    <Property Name="q1_1name3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1relp3" Type="Int16" />
+    <Property Name="q1_1relp3_other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_1pre3" Type="Byte" />
+    <Property Name="q1_2" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="q1_3" Type="Int16" />
+    <Property Name="q1_3other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q1_4" Type="Int32" />
+    <Property Name="q1_5" Type="Int32" />
+    <Property Name="q1_6" Type="Int16" />
+    <Property Name="q2_1" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="q2_2" Type="DateTime" />
+    <Property Name="q2_3" Type="DateTime" />
+    <Property Name="q3_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_1_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_1_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_3code" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q3_4" Type="DateTime" />
+    <Property Name="q3_5" Type="DateTime" />
+    <Property Name="Calcq3_6days" Type="Int32" />
+    <Property Name="q3_6days" Type="Int32" />
+    <Property Name="q3_6hours" Type="Int32" />
+    <Property Name="q3_6mins" Type="Int32" />
+    <Property Name="q3_7" Type="Int16" />
+    <Property Name="q4_1_1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q4_1_2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q5_1" Type="Int16" />
+    <Property Name="q5_1_1" Type="Int16" />
+    <Property Name="q5_1_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q5_2" Type="Int16" />
+    <Property Name="q5_3" Type="Int16" />
+    <Property Name="q5_4days" Type="Int32" />
+    <Property Name="q5_4hours" Type="Int32" />
+    <Property Name="q5_4mins" Type="Int32" />
+    <Property Name="q5_5" Type="Int16" />
+    <Property Name="q6_1_1" Type="Int32" />
+    <Property Name="q6_1_2" Type="Int32" />
+    <Property Name="q6_1_3" Type="Int32" />
+    <Property Name="q6_1_4" Type="Int32" />
+    <Property Name="q6_1_5" Type="Int32" />
+    <Property Name="q6_1_6" Type="Int32" />
+    <Property Name="q6_1_7" Type="Int32" />
+    <Property Name="q6_1_8" Type="Int32" />
+    <Property Name="q6_1_9" Type="Int32" />
+    <Property Name="q6_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_2_1_1" Type="Int16" />
+    <Property Name="q6_2_1_1T" Type="Int16" />
+    <Property Name="q6_2_1_2" Type="Int16" />
+    <Property Name="q6_2_1_2T" Type="Int16" />
+    <Property Name="q6_2_1_3" Type="Int16" />
+    <Property Name="q6_2_1_3T" Type="Int16" />
+    <Property Name="q6_2_1_4" Type="Int16" />
+    <Property Name="q6_2_1_4T" Type="Int16" />
+    <Property Name="q6_2_2" Type="Int32" />
+    <Property Name="q6_2_3" Type="Int32" />
+    <Property Name="q6_2_4days" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_2_4months" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_2_4years" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_2_5" Type="Int32" />
+    <Property Name="q6_3_1" Type="Int16" />
+    <Property Name="q6_3_2" Type="Int16" />
+    <Property Name="q6_3_3" Type="Int16" />
+    <Property Name="q6_3_4" Type="Int16" />
+    <Property Name="q6_3_5" Type="Int16" />
+    <Property Name="q6_3_6" Type="Int16" />
+    <Property Name="q6_3_7" Type="Int16" />
+    <Property Name="q6_3_8" Type="Int16" />
+    <Property Name="q6_3_9" Type="Int16" />
+    <Property Name="q6_3_10" Type="Int16" />
+    <Property Name="q6_3_11" Type="Int16" />
+    <Property Name="q6_3_12" Type="Int16" />
+    <Property Name="q6_3_13" Type="Int16" />
+    <Property Name="q6_3_14" Type="Int16" />
+    <Property Name="q6_3_15" Type="Int16" />
+    <Property Name="q6_3_16" Type="Int16" />
+    <Property Name="q6_3_17" Type="Int16" />
+    <Property Name="q6_3_18" Type="Int16" />
+    <Property Name="q6_3_19" Type="Int16" />
+    <Property Name="q6_3_19a" Type="Int16" />
+    <Property Name="q6_3_20" Type="Int16" />
+    <Property Name="q6_3_21" Type="Int16" />
+    <Property Name="q6_3_22" Type="Int16" />
+    <Property Name="q6_3_23" Type="Int16" />
+    <Property Name="q6_3_24" Type="Int16" />
+    <Property Name="q6_3_25" Type="Int16" />
+    <Property Name="q6_3_26" Type="Int16" />
+    <Property Name="q6_3_27" Type="Int16" />
+    <Property Name="q6_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_3a_1months" Type="Int32" />
+    <Property Name="q6_3a_1days" Type="Int32" />
+    <Property Name="q6_3a_2amonth" Type="Int32" />
+    <Property Name="q6_3a_2adays" Type="Int32" />
+    <Property Name="q6_3a_2bmonth" Type="Int32" />
+    <Property Name="q6_3a_2bdays" Type="Int32" />
+    <Property Name="q6_3a_3" Type="Int16" />
+    <Property Name="q6_3a_4" Type="Int32" />
+    <Property Name="q6_3a_5" Type="Int16" />
+    <Property Name="q6_3a_6" Type="Int32" />
+    <Property Name="q6_3a_7" Type="Int16" />
+    <Property Name="q6_3a_8" Type="Int32" />
+    <Property Name="q6_4" Type="Int16" />
+    <Property Name="q6_5" Type="Int16" />
+    <Property Name="q6_5Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_5_1" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="q6_5_2_1" Type="Int32" />
+    <Property Name="q6_5_2_2" Type="Int32" />
+    <Property Name="q6_5_2_3" Type="Int32" />
+    <Property Name="q6_5_2_4" Type="Int32" />
+    <Property Name="q6_5_2_5" Type="Int32" />
+    <Property Name="q6_5_2_6" Type="Int32" />
+    <Property Name="q6_5_2_7" Type="Int32" />
+    <Property Name="q6_5_2_8" Type="Int32" />
+    <Property Name="q6_5_2_9" Type="Int32" />
+    <Property Name="q6_5_2_10" Type="Int32" />
+    <Property Name="q6_5_2_11" Type="Int32" />
+    <Property Name="q6_5_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_5_3_1" Type="Int32" />
+    <Property Name="q6_5_3_2" Type="Int32" />
+    <Property Name="q6_5_3_3" Type="Int32" />
+    <Property Name="q6_5_3_4" Type="Int32" />
+    <Property Name="q6_5_3_5" Type="Int32" />
+    <Property Name="q6_5_3_6" Type="Int32" />
+    <Property Name="q6_5_3_7" Type="Int32" />
+    <Property Name="q6_5_3_8" Type="Int32" />
+    <Property Name="q6_5_3_9" Type="Int32" />
+    <Property Name="q6_5_3_10" Type="Int32" />
+    <Property Name="q6_5_3_11" Type="Int32" />
+    <Property Name="q6_5_3_12" Type="Int32" />
+    <Property Name="q6_5_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_5_4" Type="Int32" />
+    <Property Name="q6_5_5" Type="Int16" />
+    <Property Name="q6_5_6" Type="Int16" />
+    <Property Name="q6_5_7" Type="Int32" />
+    <Property Name="q6_5_8" Type="Int16" />
+    <Property Name="q6_6_1" Type="Int32" />
+    <Property Name="q6_6_2" Type="Int32" />
+    <Property Name="q6_6_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q6_6_3" Type="Int16" />
+    <Property Name="q6_6_4" Type="Int16" />
+    <Property Name="q6_6_5" Type="Int16" />
+    <Property Name="q6_6_6" Type="Int16" />
+    <Property Name="q6_6_6a" Type="Int16" />
+    <Property Name="q6_6_6b" Type="Int16" />
+    <Property Name="q6_6_6d" Type="Int16" />
+    <Property Name="q6_6_7" Type="Int16" />
+    <Property Name="q7_1" Type="Int16" />
+    <Property Name="q7_2" Type="Int16" />
+    <Property Name="q7_3" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q7_4" Type="Double" />
+    <Property Name="q7_5" Type="Int16" />
+    <Property Name="q7_6" Type="Int16" />
+    <Property Name="q7_7" Type="Int16" />
+    <Property Name="q7_8" Type="Int32" />
+    <Property Name="q7_9" Type="Int16" />
+    <Property Name="q7_10" Type="Int16" />
+    <Property Name="q7_11" Type="Int16" />
+    <Property Name="q7_12" Type="Int16" />
+    <Property Name="q7_13" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q7_14" Type="Int16" />
+    <Property Name="q7_14Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_1" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="q8_2" Type="Int16" />
+    <Property Name="q8_3" Type="Int16" />
+    <Property Name="q8_4" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_5" Type="Int16" />
+    <Property Name="q8_5_1days" Type="Int32" />
+    <Property Name="q8_5_1hours" Type="Int32" />
+    <Property Name="q8_5_2" Type="Int16" />
+    <Property Name="q8_6" Type="Int16" />
+    <Property Name="q8_7" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_8" Type="Int16" />
+    <Property Name="q8_9" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_10" Type="Int16" />
+    <Property Name="q8_10_1" Type="Int16" />
+    <Property Name="q8_11" Type="Int16" />
+    <Property Name="q8_12" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_13" Type="Int16" />
+    <Property Name="q8_14" Type="Int32" />
+    <Property Name="q8_15" Type="Int16" />
+    <Property Name="q8_16" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_17" Type="Int16" />
+    <Property Name="q8_18" Type="Int16" />
+    <Property Name="q8_19" Type="Int16" />
+    <Property Name="q8_20" Type="Int16" />
+    <Property Name="q8_21" Type="Int16" />
+    <Property Name="q8_22" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_23" Type="Int16" />
+    <Property Name="q8_24" Type="Int16" />
+    <Property Name="q8_25days" Type="Int32" />
+    <Property Name="q8_25hours" Type="Int32" />
+    <Property Name="q8_26" Type="Int16" />
+    <Property Name="q8_27hours" Type="Int32" />
+    <Property Name="q8_27days" Type="Int32" />
+    <Property Name="q8_28" Type="Int16" />
+    <Property Name="q8_29" Type="Int16" />
+    <Property Name="q8_30days" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_30hours" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_31" Type="Int16" />
+    <Property Name="q8_31_1_1" Type="Int32" />
+    <Property Name="q8_31_1_2" Type="Int32" />
+    <Property Name="q8_31_1_3" Type="Int32" />
+    <Property Name="q8_31_1_4" Type="Int32" />
+    <Property Name="q8_31_1_5" Type="Int32" />
+    <Property Name="q8_31_1_6" Type="Int32" />
+    <Property Name="q8_31_1_7" Type="Int32" />
+    <Property Name="q8_31_1_8" Type="Int32" />
+    <Property Name="q8_31_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_31_2hours" Type="Int32" />
+    <Property Name="q8_31_2days" Type="Int32" />
+    <Property Name="q8_31_3" Type="Int16" />
+    <Property Name="q8_31_4days" Type="Int32" />
+    <Property Name="q8_31_4weeks" Type="Int32" />
+    <Property Name="q8_32_1" Type="Int32" />
+    <Property Name="q8_32_2" Type="Int32" />
+    <Property Name="q8_32_3" Type="Int32" />
+    <Property Name="q8_32_4" Type="Int32" />
+    <Property Name="q8_32_5" Type="Int32" />
+    <Property Name="q8_32Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_33" Type="Int16" />
+    <Property Name="q8_33a" Type="Int16" />
+    <Property Name="q8_34hours" Type="Int32" />
+    <Property Name="q8_34days" Type="Int32" />
+    <Property Name="q8_35" Type="Int16" />
+    <Property Name="q8_36" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_37" Type="Int32" />
+    <Property Name="q8_37a" Type="Int16" />
+    <Property Name="q8_37b" Type="Int32" />
+    <Property Name="q8_38" Type="Int16" />
+    <Property Name="q8_39" Type="Int32" />
+    <Property Name="q8_40" Type="Int16" />
+    <Property Name="q8_41" Type="Int16" />
+    <Property Name="q8_42" Type="Int16" />
+    <Property Name="q8_43" Type="Int16" />
+    <Property Name="q8_44_1" Type="Int32" />
+    <Property Name="q8_44_2" Type="Int32" />
+    <Property Name="q8_44_3" Type="Int32" />
+    <Property Name="q8_44_4" Type="Int32" />
+    <Property Name="q8_44_5" Type="Int32" />
+    <Property Name="q8_44Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_45" Type="Int16" />
+    <Property Name="q8_46" Type="Int32" />
+    <Property Name="q8_46a" Type="Int16" />
+    <Property Name="q8_47" Type="Int32" />
+    <Property Name="q8_48" Type="Int16" />
+    <Property Name="q8_49" Type="Int16" />
+    <Property Name="q8_50" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="q8_51" Type="Int32" />
+    <Property Name="q8_52" Type="Int16" />
+    <Property Name="q8_53" Type="Int16" />
+    <Property Name="q8_54hours" Type="Int32" />
+    <Property Name="q8_54days" Type="Int32" />
+    <Property Name="q8_55" Type="Int16" />
+    <Property Name="q8_56" Type="Int16" />
+    <Property Name="q8_57" Type="Int16" />
+    <Property Name="q8_58" Type="Int16" />
+    <Property Name="q8_58a" Type="Int16" />
+    <Property Name="q8_58aOther" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q8_59" Type="Int16" />
+    <Property Name="q8_60" Type="Int16" />
+    <Property Name="q8_61" Type="Int16" />
+    <Property Name="q8_62" Type="Int16" />
+    <Property Name="q9_1" Type="Int16" />
+    <Property Name="q9_2" Type="Int32" />
+    <Property Name="q9_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q9_3_1" Type="Int32" />
+    <Property Name="q9_3_2" Type="Int32" />
+    <Property Name="q9_3_3" Type="Int32" />
+    <Property Name="q9_3_4" Type="Int32" />
+    <Property Name="q9_3_5" Type="Int32" />
+    <Property Name="q9_3_6" Type="Int32" />
+    <Property Name="q9_3_7" Type="Int32" />
+    <Property Name="q9_3_8" Type="Int32" />
+    <Property Name="q9_3_9" Type="Int32" />
+    <Property Name="q9_3_10" Type="Int32" />
+    <Property Name="q9_3_10Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1" Type="Int16" />
+    <Property Name="q10_1_1" Type="Int32" />
+    <Property Name="q10_1_1Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1_2" Type="Int32" />
+    <Property Name="q10_1_2Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1_3" Type="Int32" />
+    <Property Name="q10_1_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1_4" Type="Int32" />
+    <Property Name="q10_1_4Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1_2_1" Type="Int32" />
+    <Property Name="q10_1_2_2" Type="Int32" />
+    <Property Name="q10_1_2_3" Type="Int32" />
+    <Property Name="q10_1_2_4" Type="Int32" />
+    <Property Name="q10_1_2_5" Type="Int32" />
+    <Property Name="q10_1_2_6" Type="Int32" />
+    <Property Name="q10_1_2_7" Type="Int32" />
+    <Property Name="q10_1_2_8" Type="Int32" />
+    <Property Name="q10_1_2_8Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_1_2_9" Type="Int32" />
+    <Property Name="q10_2" Type="Int16" />
+    <Property Name="q10_2_1" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_3" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_4" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_5" Type="DateTime" />
+    <Property Name="q10_2_6" Type="DateTime" />
+    <Property Name="q10_2_7" Type="DateTime" />
+    <Property Name="q10_2_8" Type="DateTime" />
+    <Property Name="q10_2_9" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_10" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_11" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_12" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_2_2a" Type="Int16" />
+    <Property Name="q10_3" Type="Int16" />
+    <Property Name="q10_3Other" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q10_3_1" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q10_3_2" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="q10_3_3" Type="Int16" />
+    <Property Name="q10_3_4" Type="Int16" />
+    <Property Name="q10_3_5_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="q10_3_5_2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="q11_1" Type="Int16" />
+    <Property Name="q11_2" Type="Int16" />
+    <Property Name="q11_3" Type="Int16" />
+    <Property Name="q11_4" Type="Int16" />
+    <Property Name="q11_5a_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="q11_5a_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q11_5b_1" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="q11_5b_2" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="q12" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="assetid" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="EntryBy" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="EntryDate" Type="DateTime" Nullable="false" />
+    <Property Name="EditBy" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="EditDate" Type="DateTime" />
+  </EntityType>
+</Schema>
